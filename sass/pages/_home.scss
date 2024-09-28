@@ -14,9 +14,9 @@ body {
   margin: 0;
   overflow-x: hidden !important;
   // font-family: $font;
-  // animation: fadeInAnimation ease 1s;
-  // animation-iteration-count: 1;
-  // animation-fill-mode: forwards;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   font-family: "pretendard";
   // font-family: $font;
   // padding-right: 0px !important;
@@ -244,7 +244,6 @@ header {
     }
   }
 }
-
 // Header 
 
 // Top Banner Box 
@@ -414,7 +413,6 @@ header {
     }
   }
 }
-
 // Top Banner Box 
 
 // Why Box Section 
@@ -527,7 +525,6 @@ header {
     }
   }
 }
-
 // Why Box Section 
 
 // Billing Section 
@@ -765,7 +762,6 @@ header {
     }
   }
 }
-
 // Billing Section 
 
 // Who wr are Section 
@@ -1231,5 +1227,88 @@ header {
     }
   }
 }
-
 // Who wr are Section 
+
+// Fusion Section 
+.fusion-section{
+  position: relative;
+  z-index: 1;
+  background: #23282F;
+  padding: 150px 0 144px 0;
+  margin-bottom: 100px;
+  &::before{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 46.3%;
+    height: 100%;
+    content: "";
+    background: #2E333A;
+    z-index: -1;
+  }
+  .fusion-inner{
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 140px;
+    @media(max-width: 1440px){
+      gap: 108px;
+    }
+    .left-section{
+      p{
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 4.32px;
+        padding-left: 61px;
+        position: relative;
+        margin-bottom: 20px;
+        &::before{
+          position: absolute;
+          left: 0;
+          top: 13px;
+          height: 1px;
+          content: "";
+          width: 52px;
+          background-color: $white;
+        }
+      }
+      h2{
+        color: $white;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 59px;
+        margin-bottom: 0;
+      }
+    }
+    .right-section{
+      padding-left: 50px;
+      p{
+        color: rgba(255, 255, 255, 0.80);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 20px;
+      }
+      .last-para{
+        margin-bottom: 0;
+        span{
+          color: #C4E50F;
+        }
+      }
+    }
+  }
+  .bottom-block-image{
+    img{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+// Fusion Section 

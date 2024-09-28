@@ -35,8 +35,8 @@
   }
   .animate--fade-in-top {
     opacity: 1;
-    -webkit-animation: fade-in-top .8s ease-in;
-    animation: fade-in-top .8s ease-in;
+    -webkit-animation: fade-in-top .9s ease-in;
+    animation: fade-in-top .9s ease-in;
     -webkit-animation-fill-mode: backwards;
     animation-fill-mode: backwards
   }

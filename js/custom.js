@@ -542,29 +542,31 @@ $(window).scroll(function () {
 // 	$("#mobileMenuClose").click();
 // });
 
-// function slowScroll() {
-// 	$('.tour-details-top-buttons-wrapper a[href^="#"]').on("click", function (e) {
-// 		if ($(this).attr('href') === '#') {
-// 			e.preventDefault();
-// 		} else {
-// 			if ($(window).width() < 1024) {
-// 				if (!$(e.target).is('.sub-arrow')) {
-// 					$('html, body').animate({
-// 						scrollTop: $(this.hash).offset().top - 190
-// 					}, 500);
-// 					$('.menu-holder').removeClass('show');
-// 					$('#toggle').removeClass('on');
-// 					return false;
-// 				}
-// 			} else {
-// 				$('html, body').animate({
-// 					scrollTop: $(this.hash).offset().top - 149
-// 				}, 500);
-// 				return false;
-// 			}
-// 		}
-// 	});
-// }
+slowScroll();
+
+function slowScroll() {
+	$('.home-top-content-box .link-wrapper a[href^="#"]').on("click", function (e) {
+		if ($(this).attr('href') === '#') {
+			e.preventDefault();
+		} else {
+			if ($(window).width() < 1024) {
+				if (!$(e.target).is('.sub-arrow')) {
+					$('html, body').animate({
+						scrollTop: $(this.hash).offset().top - 71
+					}, 500);
+					$('.menu-holder').removeClass('show');
+					$('#toggle').removeClass('on');
+					return false;
+				}
+			} else {
+				$('html, body').animate({
+					scrollTop: $(this.hash).offset().top - 71
+				}, 500);
+				return false;
+			}
+		}
+	});
+}
 
 
 // var prevIcon = '<i class="fa fa-chevron-left" aria-hidden="true"></i>';
@@ -708,10 +710,10 @@ $(window).scroll(function () {
 // 	$('#boond_card_area').html(html);
 // });
 
-$('.counter-box h2 span').counterUp({
-    delay: 100,
-    time: 1000
-});
+// $('.counter-box h2 span').counterUp({
+//     delay: 20,
+//     time: 1000
+// });
 
 
 
