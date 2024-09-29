@@ -1660,7 +1660,7 @@ header {
               }
 
               .title-box {
-                margin-bottom: 54px;
+                margin-bottom: 20px;
 
                 h4 {
                   color: $black;
@@ -1669,6 +1669,7 @@ header {
                   font-weight: 500;
                   line-height: 34px;
                   margin-bottom: 0;
+                  min-height: 68px;
                 }
               }
 

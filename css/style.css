@@ -1304,7 +1304,7 @@ header .scrolled {
   width: 30px;
 }
 .success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .title-box {
-  margin-bottom: 54px;
+  margin-bottom: 20px;
 }
 .success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .title-box h4 {
   color: black;
@@ -1313,6 +1313,7 @@ header .scrolled {
   font-weight: 500;
   line-height: 34px;
   margin-bottom: 0;
+  min-height: 68px;
 }
 .success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .paragraph-content {
   margin-bottom: 24px;
