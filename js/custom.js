@@ -569,8 +569,47 @@ function slowScroll() {
 }
 
 
-// var prevIcon = '<i class="fa fa-chevron-left" aria-hidden="true"></i>';
-// var nextIcon = '<i class="fa fa-chevron-right" aria-hidden="true"></i>';
+var prevIcon = '<span class="material-symbols-outlined">arrow_left_alt</span>';
+var nextIcon = '<span class="material-symbols-outlined">arrow_right_alt</span>';
+
+$('.success-stories-slider').owlCarousel({
+	loop: true,
+	margin: 20,
+	autoplay: true,
+	autoplaySpeed: 2000,
+	nav: true,
+	center: false,
+    navText: [
+    prevIcon,
+    nextIcon
+    ],
+	dots: false,
+	responsive: {
+		0: {
+			items: 1
+		},
+		260: {
+			items: 1,
+
+		},
+		380: {
+			items: 1,
+
+		},
+		768: {
+			items: 1,
+
+		},
+		992: {
+			items: 1,
+
+		},
+		1300: {
+			items: 2.4,
+
+		}
+	}
+});
 
 
 
