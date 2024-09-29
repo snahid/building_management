@@ -1201,6 +1201,11 @@ header .scrolled {
   padding: 30px 27px;
   transition: 0.3s ease-in-out;
 }
+@media (max-width: 1440px) {
+  .benifits-member-section .benifits-inner-box-wrapper .benifits-box {
+    padding: 30px 26px;
+  }
+}
 .benifits-member-section .benifits-inner-box-wrapper .benifits-box .top-icon-content-box {
   display: flex;
   flex-direction: row;
