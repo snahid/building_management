@@ -1203,7 +1203,7 @@ header .scrolled {
 }
 @media (max-width: 1440px) {
   .benifits-member-section .benifits-inner-box-wrapper .benifits-box {
-    padding: 30px 26px;
+    padding: 29px 26px;
   }
 }
 .benifits-member-section .benifits-inner-box-wrapper .benifits-box .top-icon-content-box {
@@ -1306,6 +1306,11 @@ header .scrolled {
   background-color: white;
   transition: 0.3s ease-in-out;
   padding: 30px;
+}
+@media (max-width: 1440px) {
+  .success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner {
+    padding: 29px 30px;
+  }
 }
 .success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .quote-box {
   margin-bottom: 20px;
@@ -1455,6 +1460,11 @@ header .scrolled {
   border: 1px solid #4182FF;
   transition: 0.3s ease-in-out;
 }
+@media (max-width: 1440px) {
+  .management-issues-section .management-issues-inner .left-section .link-wrapper a {
+    padding: 14px 30px;
+  }
+}
 .management-issues-section .management-issues-inner .left-section .link-wrapper a span {
   transition: 0.3s ease-in-out;
 }
@@ -1483,6 +1493,12 @@ header .scrolled {
   background-color: white;
   padding: 20px 32px 20px 17px;
   transition: 0.3s ease-in-out;
+}
+@media (max-width: 1440px) {
+  .management-issues-section .management-issues-inner .right-section .management-issues-inner-box .issues-box {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
 }
 .management-issues-section .management-issues-inner .right-section .management-issues-inner-box .issues-box .icon-box {
   display: flex;

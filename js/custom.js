@@ -605,7 +605,7 @@ $('.success-stories-slider').owlCarousel({
 
 		},
 		1300: {
-			items: 2.4,
+			items: 2.5,
 
 		}
 	}
