@@ -167,38 +167,20 @@ header .header-inner-wrapper .header-inner .middle-menu-box ul li a {
 header .header-inner-wrapper .header-inner .middle-menu-box ul li a:before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-top: 2px solid #4182FF;
-  border-bottom: 2px solid #4182FF;
-  transform: scaleY(2);
-  opacity: 0;
-  transition: 0.3s;
-}
-header .header-inner-wrapper .header-inner .middle-menu-box ul li a:after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: scale(0);
-  opacity: 0;
-  transition: 0.3s;
-  z-index: -1;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease-in-out;
+  transform-origin: center;
 }
 header .header-inner-wrapper .header-inner .middle-menu-box ul li a:hover {
-  color: #4182FF;
+  color: black;
 }
 header .header-inner-wrapper .header-inner .middle-menu-box ul li a:hover:before {
-  transform: scaleY(1);
-  opacity: 1;
-}
-header .header-inner-wrapper .header-inner .middle-menu-box ul li a:hover:after {
-  transform: scaleY(1);
-  opacity: 1;
+  width: 100%;
 }
 @media (max-width: 991px) {
   header .header-inner-wrapper .header-inner .right-sign-up-box {
