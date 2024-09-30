@@ -607,7 +607,10 @@ $('.success-stories-slider').owlCarousel({
 		1300: {
 			items: 2.5,
 
-		}
+		},
+		1441:{
+			items: 2.8
+		},
 	}
 });
 
