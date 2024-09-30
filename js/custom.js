@@ -597,11 +597,11 @@ $('.success-stories-slider').owlCarousel({
 
 		},
 		768: {
-			items: 1,
+			items: 1.5,
 
 		},
 		992: {
-			items: 1,
+			items: 2.2,
 
 		},
 		1300: {

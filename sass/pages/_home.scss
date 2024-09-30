@@ -51,6 +51,10 @@ body {
     padding: 0;
     max-width: 1280px;
   }
+  @media(max-width: 1399px){
+    padding: 0 20px;
+    max-width: 100%;
+  }
 }
 
 // Header 
@@ -87,15 +91,26 @@ header {
           line-height: 28.089px;
           text-decoration: none;
           color: $black;
+          @media(max-width: 991px){
+            font-size: 14.809px;
+            line-height: 19.807px;
+          }
 
           img {
             margin-right: 10px;
             max-width: 25px;
+            @media(max-width: 991px){
+              max-width: 17.629px;
+              margin-right: 7.05px;
+            }
           }
         }
       }
 
       .middle-menu-box {
+        @media(max-width: 991px){
+          display: none;
+        }
         ul {
           margin: 0;
           padding: 0;
@@ -122,6 +137,10 @@ header {
               display: block;
               transition: .5s;
               z-index: 1;
+              @media(min-width: 1920px){
+                font-size: 18px;
+              }
+              
 
               &:before {
                 content: '';
@@ -174,6 +193,9 @@ header {
       }
 
       .right-sign-up-box {
+        @media(max-width: 991px){
+          display: none;
+        }
         a {
           display: block;
           // padding: 18px 20px;
@@ -217,6 +239,23 @@ header {
           }
         }
       }
+      // Mobile Menu 
+      .mobile-menu-wrapper{
+        display: none;
+        @media(max-width: 991px){
+          display: block;
+        }
+        .mobile-menu-btn{
+          .bar1{}
+          .bar2{}
+          .bar3{}
+        }
+        .offcanvas{
+          height: 100vh;
+
+        }
+      }
+      // Mobile Menu 
     }
   }
 
@@ -251,6 +290,9 @@ header {
 .home-top-content-box {
   padding-top: 200px;
   position: relative;
+  @media(max-width: 991px){
+    padding-top: 96px;
+  }
 
   &::before {
     position: absolute;
@@ -275,16 +317,29 @@ header {
     // margin-left: auto;
     // margin-right: auto;
     @media(max-width: 1440px) {
-      max-width: 1360;
+      // max-width: 1360px;
       padding-left: 80px;
+    }
+    @media(max-width: 1399px){
+      padding-left: 20px;
+      max-width: 100%;
     }
 
     .home-top-content-inner {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      @media(max-width: 991px){
+        flex-direction: column;
+      }
 
       .left-content-box {
+        @media(max-width: 1199px){
+          min-width: 480px;
+        }
+        @media(max-width: 991px){
+          min-width: unset;
+        }
         h1 {
           color: $black;
           font-size: 52px;
@@ -292,6 +347,15 @@ header {
           font-weight: 700;
           line-height: 72px;
           margin-bottom: 0px;
+          @media(max-width: 1350px){
+            font-size: 42px;
+            line-height: 62px;
+          }
+          @media(max-width: 1199px){
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 42px;
+          }
 
           span {
             border-radius: 8px;
@@ -308,6 +372,9 @@ header {
           font-weight: 400;
           line-height: 28px;
           margin-bottom: 40px;
+          @media(min-width: 1920px){
+            font-size: 18px;
+          }
 
           span {
             font-weight: 600;
@@ -342,6 +409,9 @@ header {
               background-color: $theme-color;
               padding: 14px 30px;
               border: 1px solid $theme-color;
+              @media(max-width: 1350px){
+                padding: 14px 20px;
+              }
 
               &:hover {
                 background-color: transparent;
@@ -357,6 +427,9 @@ header {
               border: 1px solid #23282f;
               color: #23282f;
               padding: 14px 30px;
+              @media(max-width: 1350px){
+                padding: 14px 20px;
+              }
 
               &:hover {
                 background-color: $theme-color;
@@ -386,6 +459,14 @@ header {
                 font-weight: 600;
                 line-height: 62px;
                 margin-bottom: 0;
+                @media(max-width: 1350px){
+                  font-size: 42px;
+                  line-height: 52px;
+                }
+                @media(max-width: 1199px){
+                  font-size: 34px;
+                  line-height: 44px;
+                }
               }
 
               p {
@@ -404,9 +485,14 @@ header {
       .right-image-box-wrapper {
         .right-image-box-inner {
           .image-box {
+            text-align: right;
             img {
               width: 100%;
               margin-top: -84px;
+              @media(max-width: 1024px){
+                // width: 80%;
+                margin-top: 0;
+              }
             }
           }
         }
@@ -466,6 +552,9 @@ header {
           font-style: normal;
           line-height: 26px;
           // padding-left: 6px;
+          @media(min-width: 1920px){
+            font-size: 18px;
+          }
         }
       }
     }
@@ -509,6 +598,9 @@ header {
                 font-style: normal;
                 font-weight: 400;
                 line-height: 26px;
+                @media(min-width: 1920px){
+                  font-size: 18px;
+                }
               }
             }
 
@@ -748,6 +840,9 @@ header {
         font-style: normal;
         font-weight: 400;
         line-height: 26px;
+        @media(min-width: 1920px){
+          font-size: 18px;
+        }
       }
 
       h6 {
@@ -820,6 +915,9 @@ header {
         font-weight: 400;
         line-height: 26px;
         margin-bottom: 20px;
+        @media(min-width: 1920px){
+          font-size: 18px;
+        }
       }
 
       .last-p {
@@ -918,7 +1016,7 @@ header {
 
               h5 {
                 margin-bottom: 0;
-                font-family: $font-inter;
+                // font-family: $font-inter;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 500;
@@ -1084,7 +1182,7 @@ header {
 
               h5 {
                 margin-bottom: 0;
-                font-family: $font-inter;
+                // font-family: $font-inter;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 500;
@@ -1120,7 +1218,7 @@ header {
 
               h5 {
                 margin-bottom: 0;
-                font-family: $font-inter;
+                // font-family: $font-inter;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 500;
@@ -1308,6 +1406,9 @@ header {
         font-weight: 400;
         line-height: 26px;
         margin-bottom: 20px;
+        @media(min-width: 1920px){
+          font-size: 18px;
+        }
       }
 
       .last-para {
@@ -1393,6 +1494,9 @@ header {
 
     .right-section {
       width: 616px;
+      @media(min-width: 1920px){
+        width: 660px;
+      }
 
       .right-inner {
         .key-services-box {
@@ -1445,6 +1549,9 @@ header {
                 font-style: normal;
                 font-weight: 400;
                 line-height: 26px;
+                @media(min-width: 1920px){
+                  font-size: 18px;
+                }
               }
             }
 
@@ -1509,6 +1616,9 @@ header {
         font-weight: 400;
         line-height: 26px;
         margin-bottom: 20px;
+        @media(min-width: 1920px){
+          font-size: 18px;
+        }
       }
 
       .last-para {
@@ -1573,6 +1683,9 @@ header {
           font-weight: 400;
           line-height: 26px;
           margin-bottom: 26px;
+          @media(min-width: 1920px){
+            font-size: 18px;
+          }
           br{
             @media(max-width: 1440px){
               display: none;
@@ -1635,7 +1748,7 @@ header {
 
         h2 {
           color: $black;
-          font-family: $font-inter;
+          // font-family: $font-inter;
           font-size: 46px;
           font-style: normal;
           font-weight: 600;
@@ -1694,6 +1807,9 @@ header {
                   font-weight: 400;
                   line-height: 26px;
                   margin-bottom: 0;
+                  @media(min-width: 1920px){
+                    font-size: 18px;
+                  }
                 }
               }
 
@@ -1810,6 +1926,9 @@ header {
 
     .left-section {
       width: 558px;
+      @media(min-width: 1920px){
+        width: 570px;
+      }
 
       h2 {
         color: $black;
@@ -1835,6 +1954,9 @@ header {
         font-weight: 400;
         line-height: 26px;
         margin-bottom: 40px;
+        @media(min-width: 1920px){
+          font-size: 18px;
+        }
       }
 
       .link-wrapper {
@@ -1874,6 +1996,9 @@ header {
 
     .right-section {
       width: 575px;
+      @media(min-width: 1920px){
+        width: 580px;
+      }
 
       .management-issues-inner-box {
         display: flex;
@@ -1915,6 +2040,9 @@ header {
           .content-box {
             p {
               margin-bottom: 0;
+              @media(min-width: 1920px){
+                font-size: 18px;
+              }
             }
           }
 
