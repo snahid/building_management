@@ -98,7 +98,7 @@ header {
           color: $black;
 
           @media(max-width: 991px) {
-            font-size: 14.809px;
+            // font-size: 14.809px;
             line-height: 19.807px;
           }
 
@@ -506,20 +506,26 @@ header {
           }
 
           @media(max-width: 1199px) {
-            font-size: 32px;
-            font-weight: 600;
+            font-size: 30px;
+            font-weight: 700;
             line-height: 42px;
           }
 
           @media(max-width: 991px) {
             padding-right: 20px;
           }
-
-          br {
-            @media(max-width: 575px) {
-              display: none;
+          .mobile-break{
+            display: none;
+            @media(max-width: 575px){
+              display: block;
             }
           }
+
+          // br {
+          //   @media(max-width: 575px) {
+          //     display: none;
+          //   }
+          // }
 
 
           span {
@@ -543,7 +549,7 @@ header {
           }
 
           @media(max-width: 991px) {
-            padding-right: 47px;
+            padding-right: 25px;
           }
 
           br {
@@ -723,7 +729,7 @@ header {
   padding: 100px 0 74px 0;
 
   @media(max-width: 991px) {
-    padding: 80px 0;
+    padding: 90px 0;
   }
 
   .why-box-inner {
@@ -809,6 +815,7 @@ header {
           @media(min-width: 1920px) {
             font-size: 18px;
           }
+          
         }
       }
     }
@@ -925,6 +932,9 @@ header {
             @media(min-width: 1920px) {
               font-size: 18px;
             }
+            @media(max-width: 575px){
+              padding-right: 29px;
+            }
 
             br {
               @media(max-width: 575px) {
@@ -945,7 +955,7 @@ header {
   padding: 100px 0 150px 0;
 
   @media(max-width: 991px) {
-    padding: 80px 0;
+    padding: 70px 0;
   }
 
   .billing-section-inner {
@@ -964,6 +974,9 @@ header {
     @media(max-width: 991px) {
       grid-template-columns: 1fr;
       gap: 30px;
+    }
+    @media(max-width: 575px){
+      border-bottom: 1px solid #ddd;
     }
 
     .left-section {
@@ -1256,7 +1269,7 @@ header {
           font-size: 27px;
           font-weight: 600;
           line-height: 38px;
-          margin-bottom: 20px;
+          margin-bottom: 22px;
         }
 
         span {
@@ -1284,6 +1297,14 @@ header {
 
         @media(max-width: 991px) {
           line-height: 30px;
+          font-size: 18px;
+          margin-bottom: 22px;
+        }
+        br{
+          display: none;
+          @media(max-width: 575px){
+            display: block;
+          }
         }
 
 
@@ -1307,7 +1328,7 @@ header {
         @media(max-width: 991px) {
           font-size: 16px;
           color: rgba(0, 0, 0, 0.80);
-          margin-bottom: 20px;
+          margin-bottom: 52px;
         }
 
         br {
@@ -1336,6 +1357,16 @@ header {
         @media(max-width: 991px) {
           line-height: 30px;
         }
+        @media(max-width: 575px){
+          text-align: center;
+          padding-bottom: 70px;
+        }
+        br{
+          display: none;
+          @media(max-width: 575px){
+            display: block;
+          }
+        }
 
         span {
           color: #1492EE;
@@ -1356,6 +1387,9 @@ header {
       padding: 0;
     }
   }
+  @media(max-width: 575px){
+    margin-bottom: 80px;
+  }
 
   .who-we-are-inner {
     display: flex;
@@ -1366,6 +1400,9 @@ header {
     @media(max-width: 991px) {
       flex-direction: column;
       gap: 50px;
+    }
+    @media(max-width: 575px){
+      gap: 35px;
     }
 
     .left-box {
@@ -1425,9 +1462,12 @@ header {
         }
 
         @media(max-width: 991px) {
-          font-size: 28px;
+          font-size: 27px;
           font-weight: 600;
           line-height: 38px;
+        }
+        @media(max-width: 575px){
+          margin-bottom: 22px;
         }
       }
 
@@ -1470,6 +1510,9 @@ header {
 
         @media(max-width: 991px) {
           margin-top: 30px;
+        }
+        @media(max-width: 575px){
+          display: none;
         }
 
         a {
@@ -2022,6 +2065,67 @@ header {
       // Animation Box 
     }
   }
+  // Mobile Link 
+  .mobile-link{
+    display: none;
+    padding: 0 20px;
+    margin-top: 35px;
+    @media(max-width: 575px){
+      display: block;
+    }
+    .link-wrapper {
+      margin-top: 45px;
+
+      @media(max-width: 991px) {
+        margin-top: 30px;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        max-width: 181px;
+
+        @media(max-width: 991px) {
+          padding: 10px 30px;
+        }
+
+        @media(max-width: 575px) {
+          max-width: 100%;
+        }
+
+        span {
+          transition: 0.3s ease-in-out;
+        }
+
+        &:first-child {
+          color: $white;
+          background-color: $theme-color;
+          padding: 14px 25px;
+          border: 1px solid $theme-color;
+
+          &:hover {
+            background-color: transparent;
+            color: $theme-color;
+
+            span {
+              transform: translateX(12px);
+            }
+          }
+        }
+
+      }
+    }
+  }
+  // Mobile Link 
 }
 
 // Who wr are Section 
@@ -2035,7 +2139,8 @@ header {
   margin-bottom: 100px;
 
   @media(max-width: 991px) {
-    padding: 80px 0 0 0;
+    padding: 80px 0 51px 0;
+    margin-bottom: 70px;
   }
 
   &::before {
@@ -2124,6 +2229,9 @@ header {
           font-weight: 600;
           line-height: 38px;
         }
+        @media(max-width: 575px){
+          font-size: 27px;
+        }
       }
     }
 
@@ -2205,7 +2313,7 @@ header {
   margin-bottom: 80px;
 
   @media(max-width: 991px) {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 
   .key-services-inner {
@@ -2216,7 +2324,9 @@ header {
 
     @media(max-width: 991px) {
       flex-direction: column;
-      gap: 50px;
+      gap: 25px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 70px;
     }
 
     .left-section {
@@ -2283,7 +2393,7 @@ header {
 
           @media(max-width: 575px) {
             border-radius: 12px;
-            padding: 10px 8px;
+            padding: 15px 14px 17px 14px;
           }
 
           h2 {
@@ -2302,6 +2412,7 @@ header {
             @media(max-width: 991px) {
               font-size: 24px;
               line-height: 34px;
+              margin-bottom: 7px;
             }
           }
 
@@ -2312,10 +2423,14 @@ header {
             font-style: normal;
             font-weight: 400;
             line-height: 26px;
+            @media(max-width: 991px){
+              font-size: 15px;
+            }
 
             span {
               color: $white;
               text-decoration: underline;
+              
             }
           }
         }
@@ -2386,7 +2501,7 @@ header {
                 margin-bottom: 20px;
 
                 @media(max-width: 991px) {
-                  font-size: 18px;
+                  font-size: 17px;
                   line-height: 28px;
                 }
               }
@@ -2397,6 +2512,9 @@ header {
                 font-style: normal;
                 font-weight: 400;
                 line-height: 26px;
+                @media(max-width: 991px){
+                  font-size: 15px;
+                }
 
                 @media(min-width: 1920px) {
                   font-size: 18px;
@@ -2431,7 +2549,8 @@ header {
   background: linear-gradient(180deg, rgba(65, 130, 255, 0.00) 0%, rgba(65, 130, 255, 0.12) 100%);
 
   @media(max-width: 991px) {
-    padding: 50px 0;
+    padding-top: 70px;
+    padding-bottom: 50px;
   }
 
   .benifits-member-inner {
@@ -2447,8 +2566,8 @@ header {
 
     @media(max-width: 991px) {
       flex-direction: column;
-      gap: 20px;
-      padding-bottom: 50px;
+      gap: 22px;
+      padding-bottom: 80px;
     }
 
     .left-section {
@@ -2478,7 +2597,7 @@ header {
         }
 
         @media(max-width: 991px) {
-          font-size: 28px;
+          font-size: 27px;
           font-weight: 600;
           line-height: 38px;
         }
@@ -2507,6 +2626,9 @@ header {
 
         @media(min-width: 1920px) {
           font-size: 18px;
+        }
+        @media(max-width: 991px){
+          margin-bottom: 22px;
         }
       }
 
@@ -2585,6 +2707,9 @@ header {
             font-size: 20px;
             font-weight: 600;
             line-height: 30px;
+            @media(max-width: 991px){
+              font-size: 18px;
+            }
           }
         }
       }
@@ -2646,7 +2771,7 @@ header {
   background-color: $white;
 
   @media(max-width: 991px) {
-    padding: 80px 0 30px 0;
+    padding: 70px 0 70px 0;
   }
 
   .success-stories-inner {
@@ -2942,7 +3067,7 @@ header {
   z-index: 1;
 
   @media(max-width: 991px) {
-    padding: 80px 0 100px 0;
+    padding: 0px 0 90px 0;
   }
 
   .management-issues-inner {
@@ -2969,6 +3094,10 @@ header {
 
       @media(max-width: 1350px) {
         width: 100%;
+      }
+      @media(max-width: 991px){
+        padding-top: 70px;
+        border-top: 1px solid #ddd;
       }
 
       h2 {
@@ -3109,6 +3238,7 @@ header {
           @media(max-width: 991px){
             gap: 12px;
             padding: 15px;
+            align-items: unset;
           }
 
           .icon-box {
