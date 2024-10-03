@@ -447,6 +447,12 @@ header .scrolled {
   background: rgba(148, 247, 23, 0.5);
   padding: 0 7px;
 }
+@media (max-width: 991px) {
+  .home-top-content-box .home-top-container .home-top-content-inner .left-content-box h1 span {
+    margin-right: 2px;
+    padding: 0 6px;
+  }
+}
 .home-top-content-box .home-top-container .home-top-content-inner .left-content-box p {
   margin-top: 20px;
   color: rgba(0, 0, 0, 0.8);

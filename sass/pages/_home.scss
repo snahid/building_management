@@ -535,6 +535,10 @@ header {
             border-radius: 8px;
             background: rgba(148, 247, 23, 0.50);
             padding: 0 7px;
+            @media(max-width: 991px){
+              margin-right: 2px;
+              padding: 0 6px;
+            }
           }
         }
 
