@@ -429,6 +429,11 @@ header .scrolled {
     padding-right: 20px;
   }
 }
+@media (max-width: 374px) {
+  .home-top-content-box .home-top-container .home-top-content-inner .left-content-box h1 {
+    font-size: 29px;
+  }
+}
 .home-top-content-box .home-top-container .home-top-content-inner .left-content-box h1 .mobile-break {
   display: none;
 }
@@ -557,6 +562,12 @@ header .scrolled {
     gap: 20px;
   }
 }
+@media (max-width: 374px) {
+  .home-top-content-box .home-top-container .home-top-content-inner .left-content-box .counter-section .counter-inner {
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
 .home-top-content-box .home-top-container .home-top-content-inner .left-content-box .counter-section .counter-inner .counter-box:first-child {
   min-width: 124px;
 }
@@ -583,6 +594,11 @@ header .scrolled {
   .home-top-content-box .home-top-container .home-top-content-inner .left-content-box .counter-section .counter-inner .counter-box h2 {
     font-size: 34px;
     line-height: 44px;
+  }
+}
+@media (max-width: 355px) {
+  .home-top-content-box .home-top-container .home-top-content-inner .left-content-box .counter-section .counter-inner .counter-box h2 {
+    font-size: 32px;
   }
 }
 .home-top-content-box .home-top-container .home-top-content-inner .left-content-box .counter-section .counter-inner .counter-box p {
@@ -1125,6 +1141,11 @@ header .scrolled {
     font-weight: 600;
     line-height: 38px;
     margin-bottom: 22px;
+  }
+}
+@media (max-width: 374px) {
+  .billing-section-outer .billing-section-inner .right-section h2 {
+    font-size: 25px;
   }
 }
 .billing-section-outer .billing-section-inner .right-section h2 span {
@@ -2186,6 +2207,11 @@ header .scrolled {
 @media (max-width: 991px) {
   .key-services-section .key-services-inner .left-section .left-inner .up-text-wrapper p {
     font-size: 15px;
+  }
+}
+@media (max-width: 365px) {
+  .key-services-section .key-services-inner .left-section .left-inner .up-text-wrapper p {
+    font-size: 14px;
   }
 }
 .key-services-section .key-services-inner .left-section .left-inner .up-text-wrapper p span {
