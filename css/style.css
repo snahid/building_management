@@ -1512,6 +1512,11 @@ header .scrolled {
     box-shadow: 8.67px 8.67px 34.679px 0px rgba(0, 0, 0, 0.05);
   }
 }
+@media (max-width: 420px) {
+  .who-we-are-section .who-we-are-inner .right-box .transparency-outer-box .transparency-inner-box .top-transparency-box .inner-box {
+    padding-right: 8px;
+  }
+}
 .who-we-are-section .who-we-are-inner .right-box .transparency-outer-box .transparency-inner-box .top-transparency-box .inner-box .image-box {
   display: flex;
   align-items: center;
@@ -1675,6 +1680,11 @@ header .scrolled {
     box-shadow: 8.67px 8.67px 34.679px 0px rgba(0, 0, 0, 0.05);
   }
 }
+@media (max-width: 420px) {
+  .who-we-are-section .who-we-are-inner .right-box .transparency-outer-box .transparency-inner-box .bottom-fairness-relaibility-box .fairness-box {
+    padding-right: 8px;
+  }
+}
 .who-we-are-section .who-we-are-inner .right-box .transparency-outer-box .transparency-inner-box .bottom-fairness-relaibility-box .fairness-box .image-box {
   display: flex;
   align-items: center;
@@ -1734,6 +1744,11 @@ header .scrolled {
     border-radius: 6.936px;
     border: 0.578px solid #DDD;
     box-shadow: 8.67px 8.67px 34.679px 0px rgba(0, 0, 0, 0.05);
+  }
+}
+@media (max-width: 420px) {
+  .who-we-are-section .who-we-are-inner .right-box .transparency-outer-box .transparency-inner-box .bottom-fairness-relaibility-box .relaibility-box {
+    padding-right: 8px;
   }
 }
 .who-we-are-section .who-we-are-inner .right-box .transparency-outer-box .transparency-inner-box .bottom-fairness-relaibility-box .relaibility-box .image-box {
@@ -3007,6 +3022,7 @@ header .scrolled {
     height: 34px;
     padding: 5px;
     border-radius: 4px;
+    margin-top: 5px;
   }
 }
 .management-issues-section .management-issues-inner .right-section .management-issues-inner-box .issues-box .icon-box svg {
