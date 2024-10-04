@@ -1125,6 +1125,7 @@ header {
 
                 @media(max-width: 991px) {
                   // font-size: 9.648px;
+                  font-size: 12px;
                   font-style: normal;
                   font-weight: 500;
                   // line-height: 9.648px;
@@ -1177,12 +1178,13 @@ header {
                 p {
                   margin-bottom: 0;
                   color: rgba(0, 0, 0, 0.60);
-                  font-size: 12px;
+                  font-size: 16px;
                   font-style: normal;
                   font-weight: 500;
                   line-height: 20px;
 
                   @media(max-width: 991px) {
+                    font-size: 14px;
                     // font-size: 8.269px;
                     // line-height: 13.782px;
                   }
@@ -1237,8 +1239,8 @@ header {
                     color: #EE1414;
 
                     @media(max-width: 991px) {
-                      font-size: 11.026px;
-                      line-height: 13.782px;
+                      font-size: 14px;
+                      // line-height: px;
                     }
                   }
 
@@ -1247,8 +1249,8 @@ header {
                     color: $black;
 
                     @media(max-width: 991px) {
-                      font-size: 11.026px;
-                      line-height: 13.782px;
+                      font-size: 14px;
+                      // line-height: 13.782px;
                     }
                   }
                 }
@@ -1267,8 +1269,8 @@ header {
                     color: #1492EE;
 
                     @media(max-width: 991px) {
-                      font-size: 11.026px;
-                      line-height: 13.782px;
+                      font-size: 14px;
+                      // line-height: 13.782px;
                     }
                   }
 
@@ -1277,8 +1279,8 @@ header {
                     color: $black;
 
                     @media(max-width: 991px) {
-                      font-size: 11.026px;
-                      line-height: 13.782px;
+                      font-size: 14px;
+                      // line-height: 13.782px;
                     }
                   }
                 }

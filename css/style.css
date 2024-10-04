@@ -993,6 +993,7 @@ header .scrolled {
 }
 @media (max-width: 991px) {
   .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .unit-box p {
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
   }
@@ -1040,10 +1041,15 @@ header .scrolled {
 .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .electricity-billed-box .right-billed-box p {
   margin-bottom: 0;
   color: rgba(0, 0, 0, 0.6);
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+}
+@media (max-width: 991px) {
+  .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .electricity-billed-box .right-billed-box p {
+    font-size: 14px;
+  }
 }
 .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .bill-count-box {
   margin-top: 15px;
@@ -1087,8 +1093,7 @@ header .scrolled {
 }
 @media (max-width: 991px) {
   .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box:first-child .right-billed-box p .span1 {
-    font-size: 11.026px;
-    line-height: 13.782px;
+    font-size: 14px;
   }
 }
 .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box:first-child .right-billed-box p .span2 {
@@ -1097,8 +1102,7 @@ header .scrolled {
 }
 @media (max-width: 991px) {
   .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box:first-child .right-billed-box p .span2 {
-    font-size: 11.026px;
-    line-height: 13.782px;
+    font-size: 14px;
   }
 }
 .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box:first-child .bill-count-box {
@@ -1110,8 +1114,7 @@ header .scrolled {
 }
 @media (max-width: 991px) {
   .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box:last-child .right-billed-box p .span1 {
-    font-size: 11.026px;
-    line-height: 13.782px;
+    font-size: 14px;
   }
 }
 .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box:last-child .right-billed-box p .span2 {
@@ -1120,8 +1123,7 @@ header .scrolled {
 }
 @media (max-width: 991px) {
   .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box:last-child .right-billed-box p .span2 {
-    font-size: 11.026px;
-    line-height: 13.782px;
+    font-size: 14px;
   }
 }
 .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box:last-child .bill-count-box {
