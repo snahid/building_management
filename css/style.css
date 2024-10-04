@@ -2561,7 +2561,7 @@ header .scrolled {
 }
 @media (max-width: 575px) {
   .benifits-member-section .benifits-inner-box-wrapper .benifits-box .content-box p span {
-    font-weight: 700;
+    font-weight: 600;
   }
 }
 .benifits-member-section .benifits-inner-box-wrapper .benifits-box .content-box .last-para {
