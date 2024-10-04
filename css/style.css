@@ -1048,7 +1048,7 @@ header .scrolled {
 }
 @media (max-width: 991px) {
   .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .electricity-billed-box .right-billed-box p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .bill-count-box {
@@ -2389,7 +2389,7 @@ header .scrolled {
   .benifits-member-section .benifits-member-inner {
     flex-direction: column;
     gap: 22px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
 }
 .benifits-member-section .benifits-member-inner .left-section {
@@ -2921,6 +2921,7 @@ header .scrolled {
     font-size: 30px;
     line-height: 40px;
     font-weight: 700;
+    margin-bottom: 10px;
   }
 }
 .management-issues-section .management-issues-inner .left-section h2 br {
