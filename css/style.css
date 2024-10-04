@@ -127,6 +127,11 @@ header .header-inner-wrapper .header-inner .left-logo-box a {
     line-height: 19.807px;
   }
 }
+@media (max-width: 575px) {
+  header .header-inner-wrapper .header-inner .left-logo-box a {
+    font-size: 18px;
+  }
+}
 header .header-inner-wrapper .header-inner .left-logo-box a img {
   margin-right: 10px;
   max-width: 25px;
@@ -240,8 +245,8 @@ header .header-inner-wrapper .header-inner .mobile-menu-wrapper .mobile-menu-btn
   outline: none;
   border: none;
   padding: 2px;
-  width: 32px;
-  height: 24px;
+  width: 28px;
+  height: 22px;
   border-radius: 0;
   display: flex;
   flex-direction: column;
@@ -449,8 +454,26 @@ header .scrolled {
 }
 @media (max-width: 991px) {
   .home-top-content-box .home-top-container .home-top-content-inner .left-content-box h1 span {
-    margin-right: 2px;
+    margin-right: 3px;
     padding: 0 6px;
+  }
+}
+@media (max-width: 575px) {
+  .home-top-content-box .home-top-container .home-top-content-inner .left-content-box .desktop-title {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .home-top-content-box .home-top-container .home-top-content-inner .left-content-box .desktop-title br {
+    display: none;
+  }
+}
+.home-top-content-box .home-top-container .home-top-content-inner .left-content-box .mobile-title {
+  display: none;
+}
+@media (max-width: 575px) {
+  .home-top-content-box .home-top-container .home-top-content-inner .left-content-box .mobile-title {
+    display: block;
   }
 }
 .home-top-content-box .home-top-container .home-top-content-inner .left-content-box p {
@@ -465,16 +488,6 @@ header .scrolled {
 @media (min-width: 1920px) {
   .home-top-content-box .home-top-container .home-top-content-inner .left-content-box p {
     font-size: 18px;
-  }
-}
-@media (max-width: 991px) {
-  .home-top-content-box .home-top-container .home-top-content-inner .left-content-box p {
-    padding-right: 25px;
-  }
-}
-@media (max-width: 575px) {
-  .home-top-content-box .home-top-container .home-top-content-inner .left-content-box p br {
-    display: none;
   }
 }
 .home-top-content-box .home-top-container .home-top-content-inner .left-content-box p span {
@@ -820,9 +833,32 @@ header .scrolled {
 .why-box-wrapper .why-box-inner .right-box .mobile-note-box .note-box .star-image {
   margin-top: -4px;
 }
+@media (max-width: 575px) {
+  .why-box-wrapper .why-box-inner .right-box .mobile-note-box .note-box .star-image {
+    display: none;
+  }
+}
 .why-box-wrapper .why-box-inner .right-box .mobile-note-box .note-box .star-image img {
   width: 8px;
   height: 7px;
+}
+@media (max-width: 575px) {
+  .why-box-wrapper .why-box-inner .right-box .mobile-note-box .note-box .desktop-title {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .why-box-wrapper .why-box-inner .right-box .mobile-note-box .note-box .desktop-title br {
+    display: none;
+  }
+}
+.why-box-wrapper .why-box-inner .right-box .mobile-note-box .note-box .mobile-title {
+  display: none;
+}
+@media (max-width: 575px) {
+  .why-box-wrapper .why-box-inner .right-box .mobile-note-box .note-box .mobile-title {
+    display: block;
+  }
 }
 .why-box-wrapper .why-box-inner .right-box .mobile-note-box .note-box p {
   margin-bottom: 0;
@@ -838,12 +874,10 @@ header .scrolled {
 }
 @media (max-width: 575px) {
   .why-box-wrapper .why-box-inner .right-box .mobile-note-box .note-box p {
-    padding-right: 29px;
-  }
-}
-@media (max-width: 575px) {
-  .why-box-wrapper .why-box-inner .right-box .mobile-note-box .note-box p br {
-    display: none;
+    text-align: center;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -873,11 +907,6 @@ header .scrolled {
   .billing-section-outer .billing-section-inner {
     grid-template-columns: 1fr;
     gap: 30px;
-  }
-}
-@media (max-width: 575px) {
-  .billing-section-outer .billing-section-inner {
-    border-bottom: 1px solid #ddd;
   }
 }
 .billing-section-outer .billing-section-inner .left-section {
@@ -941,7 +970,7 @@ header .scrolled {
     gap: 4.135px;
     border-radius: 2.756px;
     margin-bottom: 10px;
-    max-width: 46px;
+    justify-content: flex-start;
   }
 }
 .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .unit-box img {
@@ -964,10 +993,8 @@ header .scrolled {
 }
 @media (max-width: 991px) {
   .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .unit-box p {
-    font-size: 9.648px;
     font-style: normal;
     font-weight: 500;
-    line-height: 9.648px;
   }
 }
 .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .electricity-billed-box {
@@ -979,7 +1006,7 @@ header .scrolled {
 @media (max-width: 991px) {
   .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .electricity-billed-box {
     gap: 10px;
-    max-height: 28px;
+    max-height: 40px;
   }
 }
 .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .electricity-billed-box .left-image-box .image-box {
@@ -1017,12 +1044,6 @@ header .scrolled {
   font-weight: 500;
   line-height: 20px;
 }
-@media (max-width: 991px) {
-  .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .electricity-billed-box .right-billed-box p {
-    font-size: 8.269px;
-    line-height: 13.782px;
-  }
-}
 .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .bill-count-box {
   margin-top: 15px;
   border-radius: 8px;
@@ -1032,7 +1053,7 @@ header .scrolled {
 @media (max-width: 991px) {
   .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .bill-count-box {
     margin-top: 10px;
-    padding: 6.891px;
+    padding: 6.891px 6.891px 6.891px 9.891px;
     border-radius: 5.513px;
   }
 }
@@ -1045,10 +1066,10 @@ header .scrolled {
 }
 @media (max-width: 991px) {
   .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .bill-count-box h4 {
-    font-size: 12.404px;
+    font-size: 16;
     font-style: normal;
     font-weight: 600;
-    line-height: 17.917px;
+    line-height: 24px;
   }
 }
 .billing-section-outer .billing-section-inner .left-section .left-bill-inner-section .top-bill-section .bill-box .bg-image img {
@@ -1144,7 +1165,6 @@ header .scrolled {
 @media (max-width: 991px) {
   .billing-section-outer .billing-section-inner .right-section h2 {
     font-size: 27px;
-    font-weight: 600;
     line-height: 38px;
     margin-bottom: 22px;
   }
@@ -1161,7 +1181,7 @@ header .scrolled {
 }
 @media (max-width: 991px) {
   .billing-section-outer .billing-section-inner .right-section h2 span {
-    padding: 0 1px;
+    padding: 0 6px;
   }
 }
 .billing-section-outer .billing-section-inner .right-section h5 {
@@ -1246,7 +1266,6 @@ header .scrolled {
 @media (max-width: 575px) {
   .billing-section-outer .billing-section-inner .right-section h6 {
     text-align: center;
-    padding-bottom: 70px;
   }
 }
 .billing-section-outer .billing-section-inner .right-section h6 br {
@@ -1282,7 +1301,7 @@ header .scrolled {
 }
 @media (max-width: 991px) {
   .who-we-are-section .who-we-are-inner {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 50px;
   }
 }
@@ -1319,6 +1338,7 @@ header .scrolled {
 @media (max-width: 991px) {
   .who-we-are-section .who-we-are-inner .left-box h6 {
     margin-bottom: 20px;
+    font-size: 17px;
   }
 }
 .who-we-are-section .who-we-are-inner .left-box h6::before {
@@ -1353,7 +1373,6 @@ header .scrolled {
 @media (max-width: 991px) {
   .who-we-are-section .who-we-are-inner .left-box h2 {
     font-size: 27px;
-    font-weight: 600;
     line-height: 38px;
   }
 }
@@ -2005,6 +2024,11 @@ header .scrolled {
   position: relative;
   margin-bottom: 20px;
 }
+@media (max-width: 991px) {
+  .fusion-section .fusion-inner .left-section p {
+    font-size: 17px;
+  }
+}
 .fusion-section .fusion-inner .left-section p::before {
   position: absolute;
   left: 0;
@@ -2305,6 +2329,7 @@ header .scrolled {
   .key-services-section .key-services-inner .right-section .right-inner .key-services-box .key-box .right-content-box h4 {
     font-size: 17px;
     line-height: 28px;
+    font-weight: 600;
   }
 }
 .key-services-section .key-services-inner .right-section .right-inner .key-services-box .key-box .right-content-box p {

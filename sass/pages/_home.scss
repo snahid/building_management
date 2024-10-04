@@ -101,6 +101,9 @@ header {
             // font-size: 14.809px;
             line-height: 19.807px;
           }
+          @media(max-width: 575px){
+            font-size: 18px;
+          }
 
           img {
             margin-right: 10px;
@@ -268,8 +271,8 @@ header {
           outline: none;
           border: none;
           padding: 2px;
-          width: 32px;
-          height: 24px;
+          width: 28px;
+          height: 22px;
           // background-color: #1482ff;
           border-radius: 0;
           display: flex;
@@ -536,9 +539,26 @@ header {
             background: rgba(148, 247, 23, 0.50);
             padding: 0 7px;
             @media(max-width: 991px){
-              margin-right: 2px;
+              margin-right: 3px;
               padding: 0 6px;
             }
+          }
+        }
+
+        .desktop-title{
+          @media(max-width: 575px){
+            display: none;
+          }
+          br {
+            @media(max-width: 575px) {
+              display: none;
+            }
+          }
+        }
+        .mobile-title{
+          display: none;
+          @media(max-width: 575px){
+            display: block;
           }
         }
 
@@ -556,14 +576,10 @@ header {
           }
 
           @media(max-width: 991px) {
-            padding-right: 25px;
+            // padding-right: 25px;
           }
 
-          br {
-            @media(max-width: 575px) {
-              display: none;
-            }
-          }
+          
 
           span {
             font-weight: 600;
@@ -928,10 +944,30 @@ header {
 
           .star-image {
             margin-top: -4px;
+            @media(max-width: 575px){
+              display: none;
+            }
 
             img {
               width: 8px;
               height: 7px;
+            }
+          }
+
+          .desktop-title{
+            @media(max-width: 575px){
+              display: none;
+            }
+            br {
+              @media(max-width: 575px) {
+                display: none;
+              }
+            }
+          }
+          .mobile-title{
+            display: none;
+            @media(max-width: 575px){
+              display: block;
             }
           }
 
@@ -947,14 +983,14 @@ header {
               font-size: 18px;
             }
             @media(max-width: 575px){
-              padding-right: 29px;
+              // padding-right: 29px;
+              text-align: center;
+              max-width: 95%;
+              margin-left: auto;
+              margin-right: auto;
             }
 
-            br {
-              @media(max-width: 575px) {
-                display: none;
-              }
-            }
+           
           }
         }
       }
@@ -990,7 +1026,7 @@ header {
       gap: 30px;
     }
     @media(max-width: 575px){
-      border-bottom: 1px solid #ddd;
+      // border-bottom: 1px solid #ddd;
     }
 
     .left-section {
@@ -1049,7 +1085,8 @@ header {
                 gap: 4.135px;
                 border-radius: 2.756px;
                 margin-bottom: 10px;
-                max-width: 46px;
+                // max-width: 46px;
+                justify-content: flex-start;
               }
 
               img {
@@ -1071,10 +1108,10 @@ header {
                 line-height: 14px;
 
                 @media(max-width: 991px) {
-                  font-size: 9.648px;
+                  // font-size: 9.648px;
                   font-style: normal;
                   font-weight: 500;
-                  line-height: 9.648px;
+                  // line-height: 9.648px;
                 }
               }
             }
@@ -1087,7 +1124,7 @@ header {
 
               @media(max-width: 991px) {
                 gap: 10px;
-                max-height: 28px;
+                max-height: 40px;
               }
 
               .left-image-box {
@@ -1129,8 +1166,8 @@ header {
                   line-height: 20px;
 
                   @media(max-width: 991px) {
-                    font-size: 8.269px;
-                    line-height: 13.782px;
+                    // font-size: 8.269px;
+                    // line-height: 13.782px;
                   }
                 }
               }
@@ -1144,7 +1181,7 @@ header {
 
               @media(max-width: 991px) {
                 margin-top: 10px;
-                padding: 6.891px;
+                padding: 6.891px 6.891px 6.891px 9.891px;
                 border-radius: 5.513px;
               }
 
@@ -1156,10 +1193,10 @@ header {
                 line-height: 26px;
 
                 @media(max-width: 991px) {
-                  font-size: 12.404px;
+                  font-size: 16;
                   font-style: normal;
                   font-weight: 600;
-                  line-height: 17.917px;
+                  line-height: 24px;
                 }
               }
             }
@@ -1281,7 +1318,7 @@ header {
 
         @media(max-width: 991px) {
           font-size: 27px;
-          font-weight: 600;
+          // font-weight: 600;
           line-height: 38px;
           margin-bottom: 22px;
         }
@@ -1295,7 +1332,7 @@ header {
           padding: 0 8px;
 
           @media(max-width: 991px) {
-            padding: 0 1px;
+            padding: 0 6px;
           }
         }
       }
@@ -1376,7 +1413,7 @@ header {
         }
         @media(max-width: 575px){
           text-align: center;
-          padding-bottom: 70px;
+          // padding-bottom: 70px;
         }
         br{
           display: none;
@@ -1415,7 +1452,7 @@ header {
     gap: 40px;
 
     @media(max-width: 991px) {
-      flex-direction: column;
+      flex-direction: column-reverse;
       gap: 50px;
     }
     @media(max-width: 575px){
@@ -1447,6 +1484,7 @@ header {
 
         @media(max-width: 991px) {
           margin-bottom: 20px;
+          font-size: 17px;
         }
 
         &::before {
@@ -1480,7 +1518,7 @@ header {
 
         @media(max-width: 991px) {
           font-size: 27px;
-          font-weight: 600;
+          // font-weight: 600;
           line-height: 38px;
         }
         @media(max-width: 575px){
@@ -2220,6 +2258,9 @@ header {
         padding-left: 61px;
         position: relative;
         margin-bottom: 20px;
+        @media(max-width: 991px){
+          font-size: 17px;
+        }
 
         &::before {
           position: absolute;
@@ -2532,6 +2573,7 @@ header {
                 @media(max-width: 991px) {
                   font-size: 17px;
                   line-height: 28px;
+                  font-weight: 600;
                 }
               }
 
