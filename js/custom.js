@@ -615,6 +615,19 @@ $('.success-stories-slider').owlCarousel({
 });
 
 
+var $post = $(".top-btn-box");
+// setTimeout(function(){
+// 	$(".top-btn-box").removeClass('btn-bg');
+//  },4000);
+//  setTimeout(function(){
+// 	$('.top-btn-box').toggleClass('btn-bg');
+//  },9000);
+setInterval(function(){
+    $post.toggleClass("btn-bg");
+}, 10000);
+
+
+
 
 
 
