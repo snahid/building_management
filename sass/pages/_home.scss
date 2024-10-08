@@ -206,6 +206,13 @@ header {
               // Style 
             }
           }
+          .active{
+            a{
+              &::before{
+                width: 100%;
+              }
+            }
+          }
 
           // Dropdown 
           .dropdownwrapper {
@@ -674,6 +681,11 @@ header {
                     }
                   }
                   // Dropdown Mobile Menu 
+                }
+                .active{
+                  a{
+                    text-decoration: underline;
+                  }
                 }
               }
             }
