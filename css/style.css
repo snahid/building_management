@@ -414,7 +414,7 @@ header .header-inner-wrapper .header-inner .mobile-menu-wrapper .offcanvas .offc
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding-bottom: 120px;
 }
 header .header-inner-wrapper .header-inner .mobile-menu-wrapper .offcanvas .offcanvas-body .menu-wrapper ul {
   margin: 0;
