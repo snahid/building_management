@@ -542,6 +542,12 @@ $(window).scroll(function () {
 // 	$("#mobileMenuClose").click();
 // });
 
+document.getElementById("myVideo").setAttribute('autoplay', true);
+
+$(document).ready(function(){
+	$('#myVideo').play();
+});
+
 slowScroll();
 
 function slowScroll() {
