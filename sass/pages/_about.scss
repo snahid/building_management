@@ -30,18 +30,20 @@
                         color: $black;
                         font-size: 52px;
                         font-style: normal;
-                        font-weight: 600;
+                        font-weight: 700;
                         line-height: 62px;
                     }
                 }
                 .right-section{
-                    width: 495px;
+                    // width: 495px;
+                    width: 540px;
                     p{
                         margin-bottom: 0;
                         color: rgba(0,0,0,0.80);
                         font-style: normal;
                         font-weight: 400;
                         line-height: 26px;
+                        font-size: 18px;
                     }
                 }
             }
@@ -94,7 +96,7 @@
                 color: $black;
                 font-size: 46px;
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 700;
                 line-height: 56px;
                 margin-bottom: 43px;
             }
@@ -111,7 +113,7 @@
                 color: $black;
                 font-size: 28px;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 line-height: 38px;
                 margin-bottom: 20px;
             }
@@ -120,8 +122,9 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 26px;
+                font-size: 18px;
                 &:last-child{
-                    font-weight: 500;
+                    font-weight: 600;
                     margin-bottom: 0;
                 }
             }
@@ -166,7 +169,7 @@
                     color: $black;
                     font-size: 46px;
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 700;
                     line-height: 56px;
                     margin-bottom: 0;
                 }
@@ -265,6 +268,7 @@
                         font-style: normal;
                         font-weight: 400;
                         line-height: 26px;
+                        font-size: 18px;
                     }
                 }
                 .link-wrapper{
