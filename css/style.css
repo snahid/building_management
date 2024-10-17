@@ -4119,7 +4119,7 @@ header .scrolled {
   margin-bottom: 0;
   color: black;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 34px;
 }
 @media (max-width: 991px) {
@@ -4442,6 +4442,11 @@ header .scrolled {
   font-weight: 400;
   line-height: 22px;
 }
+@media (min-width: 1366px) {
+  .sign-in-up-wrapper .container-fluid .inner-section-wrapper .left-form-section .bottom-section-wrapper .inner-wrapper p {
+    font-size: 18px;
+  }
+}
 .sign-in-up-wrapper .container-fluid .inner-section-wrapper .left-form-section .bottom-section-wrapper .inner-wrapper p a {
   text-decoration: underline;
   font-weight: 600;
@@ -4462,6 +4467,14 @@ header .scrolled {
 }
 .sign-in-up-wrapper .container-fluid .inner-section-wrapper .right-image-section .image-wrapper img {
   width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+@media (max-width: 1024px) {
+  .sign-in-up-wrapper .container-fluid .inner-section-wrapper .right-image-section .image-wrapper img {
+    object-fit: unset;
+    height: unset;
+  }
 }
 @media (max-width: 575px) {
   .sign-in-up-wrapper .container-fluid .inner-section-wrapper .right-image-section .image-wrapper .desktop-image {
