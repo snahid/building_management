@@ -543,9 +543,13 @@ $(window).scroll(function () {
 // });
 
 
-
+// $(window).load(function()
+// {
+//     $('#loginModal').modal('show');
+// });
 $(document).ready(function(){
-	$('#myVideo').play();
+	// $('#myVideo').play();
+	$('#loginModal').modal('show');
 });
 
 slowScroll();
