@@ -4534,6 +4534,11 @@ header .scrolled {
   line-height: 26px;
   margin-bottom: 0;
 }
+@media (min-width: 1920px) {
+  .dispute-resolution-top-section-wrapper .dispute-resolution-top-inner .left-content-section p {
+    font-size: 18px;
+  }
+}
 .dispute-resolution-top-section-wrapper .dispute-resolution-top-inner .right-image-section .image-wrapper img {
   width: 100%;
   max-width: 376px;
