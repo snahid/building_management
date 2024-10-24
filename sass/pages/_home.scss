@@ -209,6 +209,7 @@ header {
 
           .active {
             a {
+              font-weight: 600;
               &::before {
                 width: 100%;
               }
@@ -3486,7 +3487,6 @@ header {
     }
   }
 }
-
 // Benifits Member Section 
 
 // Success Stories Section 
@@ -3785,7 +3785,6 @@ header {
     }
   }
 }
-
 // Success Stories Section 
 
 // Management Issues Section 

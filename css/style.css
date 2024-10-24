@@ -191,6 +191,9 @@ header .header-inner-wrapper .header-inner .middle-menu-box ul li a:hover {
 header .header-inner-wrapper .header-inner .middle-menu-box ul li a:hover:before {
   width: 100%;
 }
+header .header-inner-wrapper .header-inner .middle-menu-box ul .active a {
+  font-weight: 600;
+}
 header .header-inner-wrapper .header-inner .middle-menu-box ul .active a::before {
   width: 100%;
 }
@@ -5330,6 +5333,710 @@ header .scrolled {
 #loginModal .modal-dialog .modal-content .modal-body .login-popup-inner-wrapper .login-signup-btn-wrapper a:first-child:hover {
   background-color: transparent;
   color: black;
+}
+
+.membership-top-section-wrapepr {
+  background-color: #F5F6F8;
+  padding-top: 146px;
+  padding-bottom: 60px;
+}
+.membership-top-section-wrapepr .membership-top-section-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.membership-top-section-wrapepr .membership-top-section-inner .left-section .title-wrapper {
+  margin-bottom: 20px;
+}
+.membership-top-section-wrapepr .membership-top-section-inner .left-section .title-wrapper h2 {
+  color: black;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 62px;
+  margin-bottom: 0;
+}
+.membership-top-section-wrapepr .membership-top-section-inner .left-section .title-wrapper h2 span {
+  border-radius: 8px;
+  background: rgba(148, 247, 23, 0.5);
+  padding: 0 7px;
+}
+@media (max-width: 991px) {
+  .membership-top-section-wrapepr .membership-top-section-inner .left-section .title-wrapper h2 span {
+    margin-right: 3px;
+    padding: 0 6px;
+  }
+}
+.membership-top-section-wrapepr .membership-top-section-inner .left-section .content-para {
+  margin-bottom: 40px;
+}
+.membership-top-section-wrapepr .membership-top-section-inner .left-section .content-para p {
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  line-height: 26px;
+}
+@media (min-width: 1920px) {
+  .membership-top-section-wrapepr .membership-top-section-inner .left-section .content-para p {
+    font-size: 18px;
+  }
+}
+.membership-top-section-wrapepr .membership-top-section-inner .left-section .link-wrapper a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  max-width: 181px;
+}
+@media (max-width: 991px) {
+  .membership-top-section-wrapepr .membership-top-section-inner .left-section .link-wrapper a {
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 575px) {
+  .membership-top-section-wrapepr .membership-top-section-inner .left-section .link-wrapper a {
+    max-width: 100%;
+  }
+}
+.membership-top-section-wrapepr .membership-top-section-inner .left-section .link-wrapper a span {
+  transition: 0.3s ease-in-out;
+}
+.membership-top-section-wrapepr .membership-top-section-inner .left-section .link-wrapper a:first-child {
+  color: white;
+  background-color: #4182FF;
+  padding: 14px 25px;
+  border: 1px solid #4182FF;
+}
+.membership-top-section-wrapepr .membership-top-section-inner .left-section .link-wrapper a:first-child:hover {
+  background-color: transparent;
+  color: #4182FF;
+}
+.membership-top-section-wrapepr .membership-top-section-inner .left-section .link-wrapper a:first-child:hover span {
+  transform: translateX(12px);
+}
+.membership-top-section-wrapepr .membership-top-section-inner .right-section .right-section-inner {
+  position: relative;
+  z-index: 1;
+}
+.membership-top-section-wrapepr .membership-top-section-inner .right-section .right-section-inner .image-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.membership-top-section-wrapepr .membership-top-section-inner .right-section .right-section-inner .image-wrapper img {
+  width: 100%;
+  max-width: 522px;
+}
+.membership-top-section-wrapepr .membership-top-section-inner .right-section .right-section-inner .transparency-finance-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 222px;
+  position: absolute;
+  bottom: 26px;
+  left: -111px;
+}
+.membership-top-section-wrapepr .membership-top-section-inner .right-section .right-section-inner .transparency-finance-box-wrapper .box-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12.38px;
+  padding: 12.379px 105.628px 14.03px 12.379px;
+  border-radius: 9.903px;
+  border: 0.825px solid #DDD;
+  background: #FFF;
+  box-shadow: 12.379px 12.379px 49.517px 0px rgba(0, 0, 0, 0.05);
+}
+.membership-top-section-wrapepr .membership-top-section-inner .right-section .right-section-inner .transparency-finance-box-wrapper .box-wrapper .left-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 3.301px;
+  border: 0.825px solid #DDD;
+  background: #F5F6F8;
+}
+.membership-top-section-wrapepr .membership-top-section-inner .right-section .right-section-inner .transparency-finance-box-wrapper .box-wrapper .left-icon svg {
+  width: 19px;
+  color: black;
+}
+.membership-top-section-wrapepr .membership-top-section-inner .right-section .right-section-inner .transparency-finance-box-wrapper .box-wrapper .right-content h5 {
+  margin-bottom: 0;
+  color: black;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.membership-page-benifits-section {
+  padding: 100px 0;
+  background-color: #23282F;
+}
+@media (max-width: 991px) {
+  .membership-page-benifits-section {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+}
+.membership-page-benifits-section .benifits-member-inner {
+  padding-bottom: 62px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 107px;
+}
+@media (max-width: 1350px) {
+  .membership-page-benifits-section .benifits-member-inner {
+    gap: 70px;
+  }
+}
+@media (max-width: 991px) {
+  .membership-page-benifits-section .benifits-member-inner {
+    flex-direction: column;
+    gap: 22px;
+    padding-bottom: 60px;
+  }
+}
+.membership-page-benifits-section .benifits-member-inner .left-section {
+  width: 577px;
+}
+@media (max-width: 1350px) {
+  .membership-page-benifits-section .benifits-member-inner .left-section {
+    width: 100%;
+  }
+}
+.membership-page-benifits-section .benifits-member-inner .left-section h2 {
+  color: white;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 0;
+}
+@media (max-width: 1350px) {
+  .membership-page-benifits-section .benifits-member-inner .left-section h2 {
+    font-size: 42px;
+    line-height: 54px;
+  }
+}
+@media (max-width: 1199px) {
+  .membership-page-benifits-section .benifits-member-inner .left-section h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 991px) {
+  .membership-page-benifits-section .benifits-member-inner .left-section h2 {
+    font-size: 27px;
+    line-height: 38px;
+  }
+}
+.membership-page-benifits-section .benifits-member-inner .left-section h2 span {
+  color: #C4E50F;
+}
+.membership-page-benifits-section .benifits-member-inner .right-section {
+  width: 596px;
+}
+@media (max-width: 1350px) {
+  .membership-page-benifits-section .benifits-member-inner .right-section {
+    width: 100%;
+  }
+}
+.membership-page-benifits-section .benifits-member-inner .right-section p {
+  color: rgba(255, 255, 255, 0.8);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1920px) {
+  .membership-page-benifits-section .benifits-member-inner .right-section p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .membership-page-benifits-section .benifits-member-inner .right-section p {
+    margin-bottom: 22px;
+  }
+}
+.membership-page-benifits-section .benifits-member-inner .right-section .last-para {
+  margin-bottom: 0;
+}
+.membership-page-benifits-section .benifits-inner-box-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .membership-page-benifits-section .benifits-inner-box-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .membership-page-benifits-section .benifits-inner-box-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box {
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px 27px;
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 1440px) {
+  .membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box {
+    padding: 29px 26px;
+  }
+}
+@media (max-width: 991px) {
+  .membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box {
+    padding: 20px 18px;
+  }
+}
+.membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box .top-icon-content-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 35px;
+}
+@media (max-width: 991px) {
+  .membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box .top-icon-content-box {
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+}
+.membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box .top-icon-content-box .icon-box {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8.447px 8.446px 8.446px 8.447px;
+  border-radius: 6.143px;
+  border: 0.768px solid #DDD;
+  background: #F5F6F8;
+  transition: 0.3s ease-in-out;
+}
+.membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box .top-icon-content-box .icon-box svg {
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 991px) {
+  .membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box .top-icon-content-box .icon-box svg {
+    width: 26px;
+  }
+}
+.membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box .top-icon-content-box .title-content h4 {
+  margin-bottom: 0;
+  color: white;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+@media (max-width: 991px) {
+  .membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box .top-icon-content-box .title-content h4 {
+    font-size: 18px;
+  }
+}
+.membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box .content-box p {
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 26px;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media (min-width: 1920px) {
+  .membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box .content-box p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box .content-box p {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1440px) {
+  .membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box .content-box p br {
+    display: none;
+  }
+}
+.membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box .content-box p span {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+@media (max-width: 575px) {
+  .membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box .content-box p span {
+    font-weight: 600;
+  }
+}
+.membership-page-benifits-section .benifits-inner-box-wrapper .benifits-box .content-box .last-para {
+  margin-bottom: 0;
+}
+
+.membership-section-wrapper {
+  background-color: #F5F6F8;
+  padding: 100px 0;
+}
+.membership-section-wrapper .membership-section-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left {
+  min-width: 433px;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .title-wrapper {
+  margin-bottom: 20px;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .title-wrapper h2 {
+  margin-bottom: 0;
+  color: black;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .content-para {
+  margin-bottom: 40px;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .content-para p {
+  color: rgba(0, 0, 0, 0.8);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+@media (min-width: 1920px) {
+  .membership-section-wrapper .membership-section-inner .membershi-left .content-para p {
+    font-size: 18px;
+  }
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-price-wrapepr {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-price-wrapepr .left-section h5 {
+  margin-bottom: 0;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #F5F6F8;
+  padding: 5px 10px;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-price-wrapepr .right-section h2 {
+  font-size: 28px;
+  color: black;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-price-wrapepr .right-section h2 .middle-line {
+  text-decoration: line-through;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-price-wrapepr .right-section h2 .year {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.membership-section-wrapper .membership-section-inner .membership-right {
+  min-width: 734px;
+}
+
+.membership-page-success-stories-section {
+  padding: 106px 0 150px 0;
+  background-color: white;
+}
+@media (max-width: 991px) {
+  .membership-page-success-stories-section {
+    padding: 70px 0 70px 0;
+  }
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container {
+  position: relative;
+  z-index: 1;
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-top-title-wrapper {
+  margin-bottom: 61px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1440px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-top-title-wrapper {
+    padding: 0 80px;
+  }
+}
+@media (max-width: 1399px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-top-title-wrapper {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 991px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-top-title-wrapper {
+    margin-bottom: 0;
+  }
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-top-title-wrapper h2 {
+  color: black;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 0;
+}
+@media (max-width: 1350px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-top-title-wrapper h2 {
+    font-size: 42px;
+    line-height: 54px;
+  }
+}
+@media (max-width: 1199px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-top-title-wrapper h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 991px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-top-title-wrapper h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper {
+  padding-left: 12%;
+}
+@media (max-width: 1440px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper {
+    padding-left: 80px;
+  }
+}
+@media (max-width: 1399px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper {
+    padding-top: 94px;
+  }
+}
+@media (max-width: 766px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper {
+    padding: 94px 20px 0 20px;
+  }
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner {
+  border-radius: 18px;
+  border: 1px solid #ddd;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  padding: 30px;
+}
+@media (max-width: 1440px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner {
+    padding: 29px 30px;
+  }
+}
+@media (max-width: 991px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 575px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner {
+    min-height: 376px;
+    background: #F5F6F8;
+  }
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .quote-box {
+  margin-bottom: 20px;
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .quote-box img {
+  width: 30px;
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .title-box {
+  margin-bottom: 20px;
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .title-box h4 {
+  color: black;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+  margin-bottom: 0;
+  min-height: 68px;
+}
+@media (max-width: 991px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .title-box h4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 766px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .title-box h4 {
+    min-height: unset;
+  }
+}
+@media (max-width: 575px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .title-box h4 {
+    font-weight: 600;
+  }
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .paragraph-content {
+  margin-bottom: 24px;
+  min-height: 78px;
+}
+@media (max-width: 991px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .paragraph-content {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 766px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .paragraph-content {
+    min-height: unset;
+  }
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .paragraph-content p {
+  color: rgba(0, 0, 0, 0.8);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+@media (min-width: 1920px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .paragraph-content p {
+    font-size: 18px;
+  }
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .user-designation-box {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .user-designation-box .user-image img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .user-designation-box .designation-content h6 {
+  color: black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 4px;
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner .user-designation-box .designation-content p {
+  color: rgba(0, 0, 0, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .item .item-inner:hover {
+  background-color: #f5f6f8;
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .owl-nav {
+  margin-top: 0;
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .owl-nav button {
+  margin: 0;
+  padding: 19px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: white;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 1199px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .owl-nav button {
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+  }
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .owl-nav button span {
+  font-size: 24px;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .owl-nav button:hover {
+  background-color: #4182ff;
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .owl-nav button:hover span {
+  color: white;
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .owl-nav .owl-prev {
+  position: absolute;
+  right: 157px;
+  top: -120px;
+}
+@media (max-width: 1399px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .owl-nav .owl-prev {
+    right: 92px;
+  }
+}
+@media (max-width: 1199px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .owl-nav .owl-prev {
+    top: -104px;
+    right: 74px;
+  }
+}
+@media (max-width: 991px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .owl-nav .owl-prev {
+    top: -74px;
+    left: 0;
+  }
+}
+.membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .owl-nav .owl-next {
+  position: absolute;
+  right: 80px;
+  top: -120px;
+}
+@media (max-width: 1399px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .owl-nav .owl-next {
+    right: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .owl-nav .owl-next {
+    top: -104px;
+  }
+}
+@media (max-width: 991px) {
+  .membership-page-success-stories-section .success-stories-inner .success-stories-container .success-stories-slider-wrapper .success-stories-slider .owl-nav .owl-next {
+    top: -74px;
+    left: 54px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
