@@ -402,6 +402,92 @@ header {
         }
       }
 
+      // User Details 
+      .user-details-box{
+        @media(max-width: 991px){
+          display: none;
+        }
+        .dropdown{
+          .dropdown-btn{
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            padding-right: 30px;
+            &::after{
+              display: none;
+            }
+            &::before{
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              content: "\e313";
+              font-family: "Material Icons";
+              color: rgba(0, 0, 0, 0.80);
+              font-size: 26px;
+            }
+            .userdetails-inner{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 15px;
+              // min-width: 127px;
+              .user-image{
+                img{
+                  width: 36px;
+                  height: 36px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                  object-position: center;
+                }
+              }
+              .user-name{
+                // padding-right: 10px;
+                h5{
+                  margin-bottom: 0;
+                  color: rgba(0, 0, 0, 0.80);
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 16px;
+                }
+              }
+            }
+          }
+          .dropdown-menu{
+            background-color: $white;
+            border: 1px solid #ddd;
+            box-shadow: 15px 15px 60px 0px rgba(133, 133, 133, 0.10);
+            padding: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            width: 100%;
+            li{
+              a{
+                padding: 8px 15px;
+                border-bottom: 1px solid #ddd;
+                background-color: $white;
+                font-weight: 400;
+                line-height: 26px;
+                color: $black;
+                transition: 0.3s ease-in-out;
+                &:hover{
+                  text-decoration: underline;
+                  background-color: rgba(255, 255, 255, 0.10);
+                  background-color: #f5f6f8;
+                }
+              }
+              &:last-child{
+                a{
+                  border-bottom: 0px solid #ddd;
+                }
+              }
+            }
+          }
+        }
+      }
+      // User Details 
+
       // Mobile Menu 
       .mobile-menu-wrapper {
         display: none;

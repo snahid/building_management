@@ -320,6 +320,77 @@ header .header-inner-wrapper .header-inner .right-sign-up-box a:hover {
 header .header-inner-wrapper .header-inner .right-sign-up-box a:hover::before {
   width: 0;
 }
+@media (max-width: 991px) {
+  header .header-inner-wrapper .header-inner .user-details-box {
+    display: none;
+  }
+}
+header .header-inner-wrapper .header-inner .user-details-box .dropdown .dropdown-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  padding-right: 30px;
+}
+header .header-inner-wrapper .header-inner .user-details-box .dropdown .dropdown-btn::after {
+  display: none;
+}
+header .header-inner-wrapper .header-inner .user-details-box .dropdown .dropdown-btn::before {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "\e313";
+  font-family: "Material Icons";
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 26px;
+}
+header .header-inner-wrapper .header-inner .user-details-box .dropdown .dropdown-btn .userdetails-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+header .header-inner-wrapper .header-inner .user-details-box .dropdown .dropdown-btn .userdetails-inner .user-image img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+header .header-inner-wrapper .header-inner .user-details-box .dropdown .dropdown-btn .userdetails-inner .user-name h5 {
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+header .header-inner-wrapper .header-inner .user-details-box .dropdown .dropdown-menu {
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 15px 15px 60px 0px rgba(133, 133, 133, 0.1);
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+}
+header .header-inner-wrapper .header-inner .user-details-box .dropdown .dropdown-menu li a {
+  padding: 8px 15px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  font-weight: 400;
+  line-height: 26px;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+header .header-inner-wrapper .header-inner .user-details-box .dropdown .dropdown-menu li a:hover {
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #f5f6f8;
+}
+header .header-inner-wrapper .header-inner .user-details-box .dropdown .dropdown-menu li:last-child a {
+  border-bottom: 0px solid #ddd;
+}
 header .header-inner-wrapper .header-inner .mobile-menu-wrapper {
   display: none;
 }
