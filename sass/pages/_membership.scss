@@ -399,19 +399,23 @@
 
 
 // Membership Form Section 
-.membership-section-wrapper{
+.membership-section-wrapper {
     background-color: #F5F6F8;
     padding: 100px 0;
-    .membership-section-inner{
+
+    .membership-section-inner {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         gap: 50px;
-        .membershi-left{
+
+        .membershi-left {
             min-width: 433px;
-            .title-wrapper{
+
+            .title-wrapper {
                 margin-bottom: 20px;
-                h2{
+
+                h2 {
                     margin-bottom: 0;
                     color: $black;
                     font-size: 46px;
@@ -420,20 +424,24 @@
                     line-height: 56px;
                 }
             }
-            .content-para{
+
+            .content-para {
                 margin-bottom: 40px;
-                p{
+
+                p {
                     color: rgba(0, 0, 0, 0.80);
                     font-style: normal;
                     font-weight: 400;
                     line-height: 26px;
                     margin-bottom: 0;
-                    @media(min-width: 1920px){
+
+                    @media(min-width: 1920px) {
                         font-size: 18px;
                     }
                 }
             }
-            .membership-price-wrapepr{
+
+            .membership-price-wrapepr {
                 padding: 20px;
                 border-radius: 12px;
                 border: 1px solid #ddd;
@@ -443,8 +451,9 @@
                 justify-content: space-between;
                 align-items: center;
                 margin-bottom: 20px;
-                .left-section{
-                    h5{
+
+                .left-section {
+                    h5 {
                         margin-bottom: 0;
                         border-radius: 6px;
                         border: 1px solid #ddd;
@@ -456,30 +465,223 @@
                         line-height: 30px;
                     }
                 }
-                .right-section{
-                    h2{
+
+                .right-section {
+                    h2 {
                         font-size: 28px;
                         color: $black;
                         font-weight: 500;
                         line-height: 36px;
                         margin-bottom: 0;
                         text-transform: uppercase;
-                        .middle-line{
+
+                        .middle-line {
                             text-decoration: line-through;
                         }
-                        .year{
+
+                        .year {
                             font-size: 24px;
                             color: rgba(0, 0, 0, 0.60);
                         }
                     }
                 }
             }
+
+            .membership-process-wrapepr {
+                background-color: $white;
+                border-radius: 12px;
+                border: 1px solid #ddd;
+                padding: 20px;
+
+                .title-wrapper {
+                    margin-bottom: 30px;
+
+                    h2 {
+                        color: $black;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 34px;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .process-inner-box-wrapper {
+                    position: relative;
+                    z-index: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    &::before{
+                        position: absolute;
+                        left: 21px;
+                        top: 0;
+                        width: 1px;
+                        height: 83%;
+                        content: "";
+                        background-color: #ddd;
+                        z-index: -1;
+                    }
+
+                    .process-box {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 15px;
+
+                        .left-section {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 6.143px;
+                            border: 0.768px solid #DDD;
+                            background: #23282F;
+                            padding: 10px;
+                            width: 43px;
+                            height: 43px;
+                            h2 {
+                                color: $white;
+                                margin-bottom: 0;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 24px;
+                            }
+                        }
+                        .right-section{
+                            h4{
+                                color: $black;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 28px;
+                                margin-bottom: 10px;
+                            }
+                            p{
+                                margin-bottom: 0;
+                                color: rgba(0, 0, 0, 0.80);
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 26px;
+                            }
+                        }
+                    }
+                }
+            }
         }
-        .membership-right{
+
+        .membership-right {
             min-width: 734px;
+            padding: 30px;
+            border-radius: 12px;
+            background-color: $white;
+            border: 1px solid #ddd;
+            box-shadow: 12.379px 12.379px 49.517px 0px rgba(0, 0, 0, 0.05);
+            .membership-form-inner{
+                form{
+                    .form-group{
+                        margin-bottom: 15px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        .form-floating{
+                            input{
+                                color: $black;
+                                font-weight: 400;
+                                line-height: 24px;
+                                border-radius: 8px;
+                                border: 1px solid #ddd;
+                                background-color: $white;
+                                transition: 0.3s ease-in-out;
+                                &:focus{
+                                    border-color: #4182FF;
+                                    background-color: #f5f6f8;
+                                    box-shadow: none;
+                                    outline: none;
+                                }
+                            }
+                            select{
+                                color: $black;
+                                font-weight: 400;
+                                line-height: 24px;
+                                &:focus{
+                                    border-color: #4182FF;
+                                    background-color: #f5f6f8;
+                                    box-shadow: none;
+                                    outline: none;
+                                }
+                            }
+                            label{
+                                color: rgba(0, 0, 0, 0.60);
+                                font-weight: 400;
+                                font-style: normal;
+                            }
+                        }
+                        .form-check{
+                            margin: 0;
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                            // padding-left: 35px;
+                            input{
+                                width: 20px;
+                                height: 20px;
+                                &:focus{
+                                    box-shadow: none;
+                                    outline: none;
+                                }
+                            }
+                            label{
+                                user-select: none;
+                                font-size: 14px;
+                                color: rgba(15, 25, 46, 0.80);
+                                font-weight: 400;
+                                line-height: 22px;
+                                margin-left: 11px;
+                                br{
+                                    @media(max-width: 1440px){
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        .btn_submit {
+                            width: 100%;
+                            text-align: center;
+                            padding: 15px 30px;
+                            border-radius: 8px;
+                            font-weight: 500;
+                            line-height: 26px;
+                            color: $white;
+                            background: #4182FF;
+                            border: 1px solid #4182FF;
+                            transition: 0.3s ease-in-out;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                            @media(max-width: 991px){
+                                padding: 10px 30px;
+                            }
+
+                            span {
+                                transition: 0.3s ease-in-out;
+                            }
+
+                            &:hover {
+                                background-color: transparent;
+                                color: $theme-color;
+
+                                span {
+                                    transform: translateX(12px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
 // Membership Form Section 
 
 

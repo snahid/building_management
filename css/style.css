@@ -5759,8 +5759,180 @@ header .scrolled {
   font-size: 24px;
   color: rgba(0, 0, 0, 0.6);
 }
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-process-wrapepr {
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-process-wrapepr .title-wrapper {
+  margin-bottom: 30px;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-process-wrapepr .title-wrapper h2 {
+  color: black;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  margin-bottom: 0;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-process-wrapepr .process-inner-box-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-process-wrapepr .process-inner-box-wrapper::before {
+  position: absolute;
+  left: 21px;
+  top: 0;
+  width: 1px;
+  height: 83%;
+  content: "";
+  background-color: #ddd;
+  z-index: -1;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-process-wrapepr .process-inner-box-wrapper .process-box {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-process-wrapepr .process-inner-box-wrapper .process-box .left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6.143px;
+  border: 0.768px solid #DDD;
+  background: #23282F;
+  padding: 10px;
+  width: 43px;
+  height: 43px;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-process-wrapepr .process-inner-box-wrapper .process-box .left-section h2 {
+  color: white;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-process-wrapepr .process-inner-box-wrapper .process-box .right-section h4 {
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+.membership-section-wrapper .membership-section-inner .membershi-left .membership-process-wrapepr .process-inner-box-wrapper .process-box .right-section p {
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.8);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
 .membership-section-wrapper .membership-section-inner .membership-right {
   min-width: 734px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 12.379px 12.379px 49.517px 0px rgba(0, 0, 0, 0.05);
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group {
+  margin-bottom: 15px;
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group:last-child {
+  margin-bottom: 0;
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .form-floating input {
+  color: black;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .form-floating input:focus {
+  border-color: #4182FF;
+  background-color: #f5f6f8;
+  box-shadow: none;
+  outline: none;
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .form-floating select {
+  color: black;
+  font-weight: 400;
+  line-height: 24px;
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .form-floating select:focus {
+  border-color: #4182FF;
+  background-color: #f5f6f8;
+  box-shadow: none;
+  outline: none;
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .form-floating label {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  font-style: normal;
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .form-check {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .form-check input {
+  width: 20px;
+  height: 20px;
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .form-check input:focus {
+  box-shadow: none;
+  outline: none;
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .form-check label {
+  user-select: none;
+  font-size: 14px;
+  color: rgba(15, 25, 46, 0.8);
+  font-weight: 400;
+  line-height: 22px;
+  margin-left: 11px;
+}
+@media (max-width: 1440px) {
+  .membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .form-check label br {
+    display: none;
+  }
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .btn_submit {
+  width: 100%;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: 500;
+  line-height: 26px;
+  color: white;
+  background: #4182FF;
+  border: 1px solid #4182FF;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 991px) {
+  .membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .btn_submit {
+    padding: 10px 30px;
+  }
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .btn_submit span {
+  transition: 0.3s ease-in-out;
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .btn_submit:hover {
+  background-color: transparent;
+  color: #4182FF;
+}
+.membership-section-wrapper .membership-section-inner .membership-right .membership-form-inner form .form-group .btn_submit:hover span {
+  transform: translateX(12px);
 }
 
 .membership-page-success-stories-section {
