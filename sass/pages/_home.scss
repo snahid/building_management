@@ -4308,3 +4308,15 @@ header {
 }
 
 // Footer 
+
+.mobile-break{
+  display: none;
+  @media(max-width: 991px){
+    display: block;
+  }
+}
+.desktop-break{
+  @media(max-width: 991px){
+    display: none;
+  }
+}
