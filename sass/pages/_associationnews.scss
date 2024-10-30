@@ -5,6 +5,11 @@
 	position: relative;
 	z-index: 1;
 	margin-bottom: 100px;
+	@media(max-width: 991px){
+		padding-top: 100px;
+		margin-bottom: 80px;
+	}
+
 
 	// background: linear-gradient(180deg, rgba(65, 130, 255, 0.20) 0%, rgba(65, 130, 255, 0.00) 100%);
 	&::before {
@@ -18,6 +23,9 @@
 		height: 326px;
 		content: "";
 		z-index: -1;
+		@media(max-width: 991px){
+			bottom: 345px;
+		}
 	}
 
 	.association-news-top-inner {
@@ -27,6 +35,12 @@
 			justify-content: space-between;
 			align-items: center;
 			margin-bottom: 60px;
+			@media(max-width: 991px){
+				flex-direction: column;
+				align-items: unset;
+				gap: 30px;
+				margin-bottom: 50px;
+			}
 
 			.left-title {
 				h2 {
@@ -36,6 +50,18 @@
 					font-style: normal;
 					font-weight: 700;
 					line-height: 62px;
+					@media(max-width: 1350px) {
+						font-size: 42px;
+						line-height: 54px;
+					  }
+			  
+					  @media(max-width: 1199px) {
+						font-size: 32px;
+						line-height: 42px;
+					  }
+					  @media(max-width: 991px){
+						text-align: center;
+					  }
 				}
 			}
 
@@ -50,6 +76,11 @@
 						border-radius: 8px;
 						border: 1px solid #ddd;
 						min-width: 520px;
+						@media(max-width: 991px){
+							min-width: 100%;
+							padding: 10px 15px;
+							gap: 10px;
+						}
 
 						.submit_btn {
 							padding: 0;
@@ -59,6 +90,10 @@
 							svg {
 								width: 24px;
 								height: 24px;
+								@media(max-width: 991px){
+									width: 18px;
+									height: 18px;
+								}
 							}
 						}
 
@@ -90,11 +125,21 @@
 			justify-content: space-between;
 			align-items: center;
 			gap: 53px;
+			@media(max-width: 991px){
+				flex-direction: column;
+				align-items: unset;
+				padding: 20px;
+				border-radius: 8px;
+				gap: 41px;
+			}
 
 			.left-image-wrapper {
 				border-radius: 12px;
 				overflow: hidden;
 				max-width: 566px;
+				@media(max-width: 1399px){
+					max-width: 100%;
+				}
 
 				img {
 					width: 100%;
@@ -103,6 +148,9 @@
 
 			.right-content-wrapper {
 				max-width: 600px;
+				@media(max-width: 1399px){
+					max-width: 100%;
+				}
 
 				.top-date {
 					display: flex;
@@ -110,6 +158,9 @@
 					align-items: center;
 					gap: 10px;
 					margin-bottom: 30px;
+					@media(max-width: 991px){
+						margin-bottom: 15px;
+					}
 
 					.calendar-icon {
 						svg {
@@ -139,11 +190,18 @@
 						font-size: 36px;
 						font-weight: 600;
 						line-height: 46px;
+						@media(max-width: 991px){
+							font-size: 24px;
+							line-height: 34px;
+						}
 					}
 				}
 
 				.conttent-wrapper {
 					margin-bottom: 50px;
+					@media(max-width: 991px){
+						margin-bottom: 30px;
+					}
 
 					p {
 						margin-bottom: 0;
@@ -170,9 +228,6 @@
 
 						@media(max-width: 991px) {
 							padding: 10px 30px;
-						}
-
-						@media(max-width: 575px) {
 							max-width: 100%;
 						}
 
@@ -185,6 +240,9 @@
 							background-color: $theme-color;
 							padding: 14px 25px;
 							border: 1px solid $theme-color;
+							@media(max-width: 991px){
+								padding: 10px 25px;
+							}
 
 							&:hover {
 								background-color: transparent;
@@ -208,11 +266,18 @@
 // Associatin News Section 
 .association-news-section-wrapper {
 	padding-bottom: 200px;
+	@media(max-width: 991px){
+		padding-bottom: 100px;
+	}
 
 	.association-news-inner {
 		.top-title {
 			text-align: center;
 			margin-bottom: 50px;
+			@media(max-width: 991px){
+				margin-bottom: 30px;
+				text-align: left;
+			}
 
 			h3 {
 				color: $black;
@@ -220,6 +285,10 @@
 				font-weight: 600;
 				line-height: 56px;
 				margin-bottom: 0;
+				@media(max-width: 991px){
+					font-size: 28px;
+					line-height: 38px;
+				}
 			}
 		}
 
@@ -232,6 +301,12 @@
 						justify-content: space-between;
 						align-items: center;
 						margin-bottom: 30px;
+						@media(max-width: 991px){
+							margin-bottom: 20px;
+							flex-direction: column;
+							align-items: unset;
+							gap: 30px;
+						}
 
 						.left-tab-button-wrapper {
 							max-width: 475px;
@@ -319,6 +394,11 @@
 									top: 50%;
 									transform: translateY(-50%);
 									transition: 0.3s ease-in-out;
+									span{
+										@media(max-width: 991px){
+											font-size: 22px;
+										}
+									}
 
 									&:hover {
 										background-color: $theme-color;
@@ -354,6 +434,10 @@
 										padding-top: 13px;
 										padding-bottom: 13px;
 										padding-left: 13px;
+										@media(max-width: 991px){
+											padding-top: 11px;
+											padding-bottom: 11px;
+										}
 
 										&:focus {
 											border-color: #4182FF;
@@ -379,9 +463,18 @@
 									grid-template-columns: repeat(3, 1fr);
 									gap: 20px;
 									// grid-row-gap: 50px;
+									@media(max-width: 991px){
+										grid-template-columns: repeat(2, 1fr);
+									}
+									@media(max-width: 767px){
+										grid-template-columns: repeat(1, 1fr);
+									}
 
 									.news-box {
 										margin-bottom: 50px;
+										@media(max-width: 991px){
+											margin-bottom: 0;
+										}
 
 										a {
 											display: block;
@@ -392,6 +485,9 @@
 												border-radius: 18px;
 												overflow: hidden;
 												margin-bottom: 20px;
+												@media(max-width: 991px){
+													border-radius: 8px;
+												}
 
 												img {
 													width: 100%;
@@ -462,6 +558,11 @@
 								display: flex;
 								justify-content: center;
 								align-items: center;
+								@media(max-width: 991px){
+									height: unset;
+									padding: 9px 10px;
+									margin-top: 30px;
+								}
 
 								ul {
 									margin-bottom: 0;
@@ -489,6 +590,12 @@
 												color: $white;
 												border-radius: $theme-color;
 											}
+											&:focus{
+												box-shadow: none;
+												background-color: $theme-color;
+												color: $white;
+												border-radius: $theme-color;
+											}
 
 											.desktop-version {
 												@media(max-width: 991px) {
@@ -510,6 +617,9 @@
 											left: 10px;
 											top: 10px;
 											height: 100%;
+											@media(max-width: 991px){
+												position: unset;
+											}
 
 											a {
 												padding: 19px;
@@ -518,6 +628,17 @@
 												background-color: #f5f6f8;
 												border: none;
 												color: $black;
+												@media(max-width: 991px){
+													padding: 6px 12px;
+													width: 36px;
+													height: 36px;
+													font-size: 12px;
+												}
+												span{
+													@media(max-width: 991px){
+														font-size: 22px;
+													}
+												}
 
 												&:hover {
 													background-color: $theme-color;
@@ -531,6 +652,9 @@
 											right: 10px;
 											top: 10px;
 											height: 100%;
+											@media(max-width: 991px){
+												position: unset;
+											}
 
 											a {
 												padding: 19px;
@@ -539,6 +663,16 @@
 												background-color: #f5f6f8;
 												border: none;
 												color: $black;
+												@media(max-width: 991px){
+													padding: 6px 12px;
+													width: 36px;
+													height: 36px;
+												}
+												span{
+													@media(max-width: 991px){
+														font-size: 22px;
+													}
+												}
 
 												&:hover {
 													background-color: $theme-color;
