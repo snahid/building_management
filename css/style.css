@@ -6825,6 +6825,7 @@ header .scrolled {
 @media (max-width: 991px) {
   .association-news-section-wrapper .association-news-inner .association-news .inner-news-wrapper .inner-wrapper .card .card-body .tab-content .news-inner-wrapper {
     grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
   }
 }
 @media (max-width: 767px) {
@@ -6892,9 +6893,9 @@ header .scrolled {
 .association-news-section-wrapper .association-news-inner .association-news .inner-news-wrapper .inner-wrapper .card .card-body .tab-content .news-inner-wrapper .news-box a .news-title h3 {
   color: black;
   margin-bottom: 0;
-  font-size: 20px;
+  font-size: 21px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 30px;
 }
 .association-news-section-wrapper .association-news-inner .association-news .inner-news-wrapper .inner-wrapper .card .card-body .pagination-outer-wrappers {
@@ -6930,8 +6931,8 @@ header .scrolled {
   line-height: 16px;
   border-radius: 6px;
   border: 1px solid #ddd;
-  width: 36px;
-  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6983,7 +6984,7 @@ header .scrolled {
 @media (max-width: 991px) {
   .association-news-section-wrapper .association-news-inner .association-news .inner-news-wrapper .inner-wrapper .card .card-body .pagination-outer-wrappers ul li:first-child a {
     padding: 6px 12px;
-    width: 36px;
+    min-min-width: 36px;
     height: 36px;
     font-size: 12px;
   }
@@ -7019,8 +7020,8 @@ header .scrolled {
 @media (max-width: 991px) {
   .association-news-section-wrapper .association-news-inner .association-news .inner-news-wrapper .inner-wrapper .card .card-body .pagination-outer-wrappers ul li:last-child a {
     padding: 6px 12px;
-    width: 36px;
-    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
   }
 }
 @media (max-width: 991px) {
@@ -7752,6 +7753,7 @@ header .scrolled {
 @media (max-width: 1199px) {
   .announcements-news-section-wrapper .announcements-news-inner .announcements-news .inner-news-wrapper .inner-wrapper .card .card-body .tab-content .news-inner-wrapper {
     grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
   }
 }
 .announcements-news-section-wrapper .announcements-news-inner .announcements-news .inner-news-wrapper .inner-wrapper .card .card-body .tab-content .news-inner-wrapper .news-box {
@@ -7815,7 +7817,7 @@ header .scrolled {
   margin-bottom: 0;
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 34px;
 }
 @media (max-width: 991px) {
@@ -7966,7 +7968,7 @@ header .scrolled {
 @media (max-width: 991px) {
   .announcements-news-section-wrapper .announcements-news-inner .announcements-news .inner-news-wrapper .inner-wrapper .card .card-body .pagination-outer-wrappers {
     margin-top: 30px;
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 .announcements-news-section-wrapper .announcements-news-inner .announcements-news .inner-news-wrapper .inner-wrapper .card .card-body .pagination-outer-wrappers ul {
@@ -7982,8 +7984,8 @@ header .scrolled {
   line-height: 16px;
   border-radius: 6px;
   border: 1px solid #ddd;
-  width: 36px;
-  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
   display: flex;
   justify-content: center;
   align-items: center;
