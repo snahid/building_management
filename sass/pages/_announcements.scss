@@ -158,6 +158,9 @@
                     border-radius: 12px;
                     border: 1px solid #ddd;
                     min-width: 412px;
+                    @media(max-width: 991px){
+                        min-width: 100%;
+                    }
 
                     .box-wrapper {
                         display: flex;
