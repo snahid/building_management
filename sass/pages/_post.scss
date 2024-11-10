@@ -1,0 +1,38 @@
+.post-wrapper{
+    padding-top: 196px;
+    .top-back-link{
+        margin-bottom: 34px;
+        a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-decoration: none;
+            gap: 10px;
+            color: $black;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+    }
+    .post-inner{
+        form{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 21px;
+            .left-editor-box{
+                width: 100%;
+                .form-group{
+                    textarea{
+                        width: 100%;
+                    }
+                    .note-editor.note-airframe, .note-editor.note-frame{
+                        border: 1px solid #ddd;
+                        border-radius: 12px;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}

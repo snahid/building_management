@@ -150,6 +150,41 @@
                         }
                     }
                 }
+
+                .link-wrapper {
+                    a {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        background-color: #4182FF;
+                        border-radius: 8px;
+                        padding: 14px 50px;
+                        color: $white;
+                        text-align: center;
+                        font-weight: 500;
+                        line-height: 26px;
+                        transition: 0.3s ease-in-out;
+                        border: 1px solid #4182FF;
+                        color: $white;
+                        text-decoration: none;
+
+                        span {
+                            transition: 0.3s ease-in-out;
+                        }
+
+                        &:hover {
+                            background-color: transparent;
+                            color: #4182FF;
+
+                            span {
+                                transform: translateX(5px);
+                            }
+                        }
+                    }
+
+                }
             }
 
             .right-content-wrapper {
@@ -158,7 +193,8 @@
                     border-radius: 12px;
                     border: 1px solid #ddd;
                     min-width: 412px;
-                    @media(max-width: 991px){
+
+                    @media(max-width: 991px) {
                         min-width: 100%;
                     }
 
@@ -169,6 +205,7 @@
                         align-items: center;
                         border-bottom: 1px solid #ddd;
                         padding: 20px;
+
                         .left-side {
                             h5 {
                                 margin-bottom: 0;
@@ -188,12 +225,14 @@
                                 line-height: 26px;
                             }
                         }
-                        &:first-child{
-                            .right-side{
+
+                        &:first-child {
+                            .right-side {
                                 background-color: #4182FF;
                                 padding: 10px;
                                 border-radius: 6px;
-                                h6{
+
+                                h6 {
                                     color: $white;
                                 }
                             }

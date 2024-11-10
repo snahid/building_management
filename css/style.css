@@ -7606,6 +7606,34 @@ header .scrolled {
   color: black;
   box-shadow: none;
 }
+.announcements-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper .link-wrapper a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #4182FF;
+  border-radius: 8px;
+  padding: 14px 50px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  line-height: 26px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #4182FF;
+  color: white;
+  text-decoration: none;
+}
+.announcements-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper .link-wrapper a span {
+  transition: 0.3s ease-in-out;
+}
+.announcements-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper .link-wrapper a:hover {
+  background-color: transparent;
+  color: #4182FF;
+}
+.announcements-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper .link-wrapper a:hover span {
+  transform: translateX(5px);
+}
 .announcements-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-content-wrapper .category-content-wrapper {
   background-color: white;
   border-radius: 12px;
@@ -8542,10 +8570,45 @@ header .scrolled {
   margin-left: auto;
   transition: 0.3s ease-in-out;
 }
+.outer-wrapper .tender-announcements-inner-wrapper .table-responsive table tbody tr td a span {
+  transition: 0.3s ease-in-out;
+}
 .outer-wrapper .tender-announcements-inner-wrapper .table-responsive table tbody tr td a:hover {
   background-color: #4182ff;
   color: white;
   border-color: #4182ff;
+}
+.outer-wrapper .tender-announcements-inner-wrapper .table-responsive table tbody tr td a:hover span {
+  transform: translateX(5px);
+}
+.outer-wrapper .tender-announcements-inner-wrapper .table-responsive table tbody tr td .buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.outer-wrapper .tender-announcements-inner-wrapper .table-responsive table tbody tr td .buttons-wrapper .btn {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: white;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.outer-wrapper .tender-announcements-inner-wrapper .table-responsive table tbody tr td .buttons-wrapper .edit-btn:hover {
+  border-color: #4182ff;
+}
+.outer-wrapper .tender-announcements-inner-wrapper .table-responsive table tbody tr td .buttons-wrapper .edit-btn svg {
+  color: #4182ff;
+}
+.outer-wrapper .tender-announcements-inner-wrapper .table-responsive table tbody tr td .buttons-wrapper .delete-btn:hover {
+  border-color: #ff4e41;
+}
+.outer-wrapper .tender-announcements-inner-wrapper .table-responsive table tbody tr td .buttons-wrapper .delete-btn svg {
+  color: #ff4e41;
 }
 .outer-wrapper .tender-announcements-inner-wrapper .table-mobile-wrapper {
   display: none;
@@ -8594,20 +8657,69 @@ header .scrolled {
   font-weight: 400;
   line-height: 14px;
 }
+.outer-wrapper .tender-announcements-inner-wrapper .table-mobile-wrapper .mobile-table-inner-wrapper .table-mobile-data-wrapper .table-data-box .data-link-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.outer-wrapper .tender-announcements-inner-wrapper .table-mobile-wrapper .mobile-table-inner-wrapper .table-mobile-data-wrapper .table-data-box .data-link-wrapper .announcemnts-wrapper h5 {
+  margin-bottom: 0;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
 .outer-wrapper .tender-announcements-inner-wrapper .table-mobile-wrapper .mobile-table-inner-wrapper .table-mobile-data-wrapper .table-data-box .data-link-wrapper a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 50px;
   align-items: center;
   text-decoration: none;
   color: black;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+  transition: 0.3s ease-in-out;
 }
 .outer-wrapper .tender-announcements-inner-wrapper .table-mobile-wrapper .mobile-table-inner-wrapper .table-mobile-data-wrapper .table-data-box .data-link-wrapper a:hover {
-  text-decoration: underline;
+  color: #4182ff;
+  transform: translateX(5px);
+}
+.outer-wrapper .tender-announcements-inner-wrapper .table-mobile-wrapper .mobile-table-inner-wrapper .table-mobile-data-wrapper .table-data-box .data-link-wrapper .buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: flex-end;
+}
+.outer-wrapper .tender-announcements-inner-wrapper .table-mobile-wrapper .mobile-table-inner-wrapper .table-mobile-data-wrapper .table-data-box .data-link-wrapper .buttons-wrapper .btn {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: white;
+  width: 34px;
+  height: 34px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.outer-wrapper .tender-announcements-inner-wrapper .table-mobile-wrapper .mobile-table-inner-wrapper .table-mobile-data-wrapper .table-data-box .data-link-wrapper .buttons-wrapper .edit-btn:hover {
+  border-color: #4182ff;
+}
+.outer-wrapper .tender-announcements-inner-wrapper .table-mobile-wrapper .mobile-table-inner-wrapper .table-mobile-data-wrapper .table-data-box .data-link-wrapper .buttons-wrapper .edit-btn svg {
+  color: #4182ff;
+}
+.outer-wrapper .tender-announcements-inner-wrapper .table-mobile-wrapper .mobile-table-inner-wrapper .table-mobile-data-wrapper .table-data-box .data-link-wrapper .buttons-wrapper .delete-btn:hover {
+  border-color: #ff4e41;
+}
+.outer-wrapper .tender-announcements-inner-wrapper .table-mobile-wrapper .mobile-table-inner-wrapper .table-mobile-data-wrapper .table-data-box .data-link-wrapper .buttons-wrapper .delete-btn svg {
+  color: #ff4e41;
 }
 .outer-wrapper .paginations-outer-wrappers {
   background-color: #f5f6f8;
@@ -9736,6 +9848,256 @@ header .scrolled {
 .joblisting-details-section-wrapper .announcements-details-inner-wrapper .news-content-related-content-wrapper .related-content-wrapper .related-inner-wrapper .explore-more-btn a:hover {
   background-color: transparent;
   color: #4182FF;
+}
+
+.tender-announcements-post-top-section-wrapper {
+  background: #F5F6F8;
+  padding-top: 196px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 130px;
+}
+@media (max-width: 991px) {
+  .tender-announcements-post-top-section-wrapper {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+.tender-announcements-post-top-section-wrapper::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 55px;
+  height: 55px;
+  content: "";
+  background-color: #94F717;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  .tender-announcements-post-top-section-wrapper::before {
+    width: 30px;
+    height: 30px;
+    display: none;
+  }
+}
+.tender-announcements-post-top-section-wrapper::after {
+  position: absolute;
+  left: 55px;
+  bottom: 55px;
+  content: "";
+  width: 43px;
+  height: 43px;
+  background-color: #C4E50F;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  .tender-announcements-post-top-section-wrapper::after {
+    width: 24px;
+    height: 24px;
+    bottom: 30px;
+    left: 30px;
+    display: none;
+  }
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper {
+    flex-direction: column;
+    align-items: unset;
+    gap: 20px;
+  }
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .left-title h2 {
+  margin-bottom: 0;
+  color: black;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 62px;
+}
+@media (max-width: 1350px) {
+  .tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .left-title h2 {
+    font-size: 42px;
+    line-height: 54px;
+  }
+}
+@media (max-width: 1199px) {
+  .tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .left-title h2 {
+    font-size: 29px;
+    line-height: 40px;
+  }
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .left-title p {
+  font-weight: 600;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper p {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper p {
+    margin-bottom: 30px;
+    max-width: 90%;
+  }
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper form .form-group {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 14px 20px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  min-width: 520px;
+}
+@media (max-width: 991px) {
+  .tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper form .form-group {
+    min-width: 100%;
+    padding: 10px 15px;
+    gap: 10px;
+  }
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper form .form-group .submit_btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper form .form-group .submit_btn svg {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 991px) {
+  .tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper form .form-group .submit_btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper form .form-group input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding: 0;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper form .form-group input:focus {
+  color: black;
+  box-shadow: none;
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper .link-wrapper a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #4182FF;
+  border-radius: 8px;
+  padding: 14px 50px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  line-height: 26px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #4182FF;
+  color: white;
+  text-decoration: none;
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper .link-wrapper a span {
+  transition: 0.3s ease-in-out;
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper .link-wrapper a:hover {
+  background-color: transparent;
+  color: #4182FF;
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-search-wrapper .link-wrapper a:hover span {
+  transform: translateX(5px);
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-content-wrapper .category-content-wrapper {
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  min-width: 412px;
+}
+@media (max-width: 991px) {
+  .tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-content-wrapper .category-content-wrapper {
+    min-width: 100%;
+  }
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-content-wrapper .category-content-wrapper .box-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-content-wrapper .category-content-wrapper .box-wrapper .left-side h5 {
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-content-wrapper .category-content-wrapper .box-wrapper .right-side h6 {
+  margin-bottom: 0;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-content-wrapper .category-content-wrapper .box-wrapper:first-child .right-side {
+  background-color: #4182FF;
+  padding: 10px;
+  border-radius: 6px;
+}
+.tender-announcements-post-top-section-wrapper .announcements-top-inner .title-search-wrapper .right-content-wrapper .category-content-wrapper .box-wrapper:first-child .right-side h6 {
+  color: white;
+}
+
+.post-wrapper {
+  padding-top: 196px;
+}
+.post-wrapper .top-back-link {
+  margin-bottom: 34px;
+}
+.post-wrapper .top-back-link a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.post-wrapper .post-inner form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 21px;
+}
+.post-wrapper .post-inner form .left-editor-box {
+  width: 100%;
+}
+.post-wrapper .post-inner form .left-editor-box .form-group textarea {
+  width: 100%;
+}
+.post-wrapper .post-inner form .left-editor-box .form-group .note-editor.note-airframe, .post-wrapper .post-inner form .left-editor-box .form-group .note-editor.note-frame {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

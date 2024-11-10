@@ -140,11 +140,50 @@
                                 max-width: 150px;
                                 margin-left: auto;
                                 transition: 0.3s ease-in-out;
+                                span{
+                                    transition: 0.3s ease-in-out;
+                                }
 
                                 &:hover {
                                     background-color: #4182ff;
                                     color: $white;
                                     border-color: #4182ff;
+                                    span{
+                                        transform: translateX(5px);
+                                    }
+                                }
+                            }
+                            .buttons-wrapper{
+                                display: flex;
+                                flex-direction: row;
+                                gap: 12px;
+                                justify-content: flex-end;
+                                .btn{
+                                    border-radius: 6px;
+                                    border: 1px solid #ddd;
+                                    background-color: $white;
+                                    width: 44px;
+                                    height: 44px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: 0.3s ease-in-out;
+                                }
+                                .edit-btn{
+                                    &:hover{
+                                        border-color: #4182ff;
+                                    }
+                                    svg{
+                                        color: #4182ff;
+                                    }
+                                }
+                                .delete-btn{
+                                    &:hover{
+                                        border-color: #ff4e41;
+                                    }
+                                    svg{
+                                        color: #ff4e41;
+                                    }
                                 }
                             }
                         }
@@ -168,7 +207,8 @@
                     z-index: 1;
                     border-top-left-radius: 12px;
                     border-top-right-radius: 12px;
-                    h5{
+
+                    h5 {
                         margin-bottom: 0;
                         color: rgba(255, 255, 255, 0.80);
                         font-size: 16px;
@@ -176,23 +216,27 @@
                         line-height: 26px;
                     }
                 }
-                .table-mobile-data-wrapper{
-                    .table-data-box{
+
+                .table-mobile-data-wrapper {
+                    .table-data-box {
                         border: 1px solid #ddd;
                         border-top: 0px solid transparent;
                         padding: 20px;
                         transition: 0.3s ease-in-out;
-                        &:hover{
+
+                        &:hover {
                             background-color: #f5f6f8;
                         }
-                        .top-writer-date-wrapper{
+
+                        .top-writer-date-wrapper {
                             display: flex;
                             flex-direction: row;
                             justify-content: space-between;
                             gap: 50px;
                             align-items: center;
                             margin-bottom: 10px;
-                            h6{
+
+                            h6 {
                                 margin-bottom: 0;
                                 color: rgba(0, 0, 0, 0.60);
                                 font-size: 14px;
@@ -200,20 +244,78 @@
                                 line-height: 14px;
                             }
                         }
-                        .data-link-wrapper{
-                            a{
+
+                        .data-link-wrapper {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .announcemnts-wrapper {
+                                h5 {
+                                    margin-bottom: 0;
+                                    color: $black;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 26px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 1;
+                                    -webkit-box-orient: vertical;
+                                }
+                            }
+
+                            a {
                                 display: flex;
                                 flex-direction: row;
                                 justify-content: space-between;
-                                gap: 50px;
+                                // gap: 50px;
                                 align-items: center;
                                 text-decoration: none;
                                 color: $black;
                                 font-size: 16px;
                                 font-weight: 400;
                                 line-height: 26px;
-                                &:hover{
-                                    text-decoration: underline;
+                                transition: 0.3s ease-in-out;
+
+                                &:hover {
+                                    color: #4182ff;
+                                    transform: translateX(5px);
+                                }
+                            }
+                            .buttons-wrapper{
+                                display: flex;
+                                flex-direction: row;
+                                gap: 8px;
+                                justify-content: flex-end;
+                                .btn{
+                                    border-radius: 6px;
+                                    border: 1px solid #ddd;
+                                    background-color: $white;
+                                    width: 34px;
+                                    height: 34px;
+                                    padding: 8px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: 0.3s ease-in-out;
+                                }
+                                .edit-btn{
+                                    &:hover{
+                                        border-color: #4182ff;
+                                    }
+                                    svg{
+                                        color: #4182ff;
+                                    }
+                                }
+                                .delete-btn{
+                                    &:hover{
+                                        border-color: #ff4e41;
+                                    }
+                                    svg{
+                                        color: #ff4e41;
+                                    }
                                 }
                             }
                         }
