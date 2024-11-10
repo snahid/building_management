@@ -5,7 +5,8 @@
     position: relative;
     z-index: 1;
     padding-bottom: 130px;
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
         padding-top: 100px;
         padding-bottom: 80px;
     }
@@ -78,6 +79,14 @@
                         line-height: 40px;
                     }
                 }
+
+                p {
+                    font-weight: 600;
+                    line-height: 16px;
+                    color: rgba(0, 0, 0, 0.60);
+                    margin-bottom: 0;
+                    margin-top: 20px;
+                }
             }
 
             .right-search-wrapper {
@@ -86,7 +95,8 @@
                     font-weight: 400;
                     line-height: 26px;
                     margin-bottom: 20px;
-                    @media(max-width: 991px){
+
+                    @media(max-width: 991px) {
                         margin-bottom: 30px;
                         max-width: 90%;
                     }
@@ -141,6 +151,53 @@
                     }
                 }
             }
+
+            .right-content-wrapper {
+                .category-content-wrapper {
+                    background-color: $white;
+                    border-radius: 12px;
+                    border: 1px solid #ddd;
+                    min-width: 412px;
+
+                    .box-wrapper {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 1px solid #ddd;
+                        padding: 20px;
+                        .left-side {
+                            h5 {
+                                margin-bottom: 0;
+                                color: rgba(0, 0, 0, 0.60);
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 28px;
+                            }
+                        }
+
+                        .right-side {
+                            h6 {
+                                margin-bottom: 0;
+                                color: $black;
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 26px;
+                            }
+                        }
+                        &:first-child{
+                            .right-side{
+                                background-color: #4182FF;
+                                padding: 10px;
+                                border-radius: 6px;
+                                h6{
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -150,7 +207,8 @@
 // Announcements News Section 
 .announcements-news-section-wrapper {
     padding: 114px 0 150px 0;
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
         padding: 80px 0 100px 0;
     }
 
@@ -328,7 +386,8 @@
                                     display: grid;
                                     grid-template-columns: repeat(2, 1fr);
                                     gap: 20px;
-                                    @media(max-width: 1199px){
+
+                                    @media(max-width: 1199px) {
                                         grid-template-columns: repeat(1, 1fr);
                                         gap: 60px;
                                     }
@@ -340,9 +399,11 @@
                                         border: 1px solid #ddd;
                                         background-color: $white;
                                         transition: 0.3s ease-in-out;
-                                        @media(max-width: 991px){
+
+                                        @media(max-width: 991px) {
                                             padding: 30px 20px;
                                         }
+
                                         .category-date-wrapper {
                                             display: flex;
                                             flex-direction: row;
@@ -366,7 +427,8 @@
                                                     flex-direction: row;
                                                     align-items: center;
                                                     gap: 10px;
-                                                    svg{
+
+                                                    svg {
                                                         width: 16px;
                                                         height: 16px;
                                                     }
@@ -374,10 +436,11 @@
                                             }
 
                                             .date-wrapper {
-                                                padding: 11px 10px; 
+                                                padding: 11px 10px;
                                                 border-radius: 6px;
                                                 border: 1px solid #ddd;
                                                 background-color: #f5f6f8;
+
                                                 h5 {
                                                     margin-bottom: 0;
                                                     color: rgba(0, 0, 0, 0.60);
@@ -390,6 +453,7 @@
 
                                         .news-title {
                                             margin-bottom: 20px;
+
                                             h3 {
                                                 color: $black;
                                                 margin-bottom: 0;
@@ -397,25 +461,30 @@
                                                 font-style: normal;
                                                 font-weight: 600;
                                                 line-height: 34px;
-                                                @media(max-width: 991px){
+
+                                                @media(max-width: 991px) {
                                                     font-size: 20px;
                                                     line-height: 30px;
                                                 }
                                             }
                                         }
-                                        .content-wrapper{
+
+                                        .content-wrapper {
                                             margin-bottom: 30px;
-                                            p{
+
+                                            p {
                                                 color: rgba(0, 0, 0, 0.80);
                                                 margin-bottom: 0;
                                                 font-weight: 400;
                                                 line-height: 26px;
                                                 max-width: 85%;
-                                                @media(max-width: 1440px){
+
+                                                @media(max-width: 1440px) {
                                                     max-width: 100%;
                                                 }
                                             }
                                         }
+
                                         .link-wrapper {
                                             a {
                                                 display: flex;
@@ -433,29 +502,33 @@
                                                 color: $black;
                                                 border: 1px solid #ddd;
                                                 padding: 14px 25px;
-                        
+
                                                 @media(max-width: 991px) {
                                                     padding: 10px 30px;
                                                     max-width: 100%;
                                                 }
-                        
+
                                                 span {
                                                     transition: 0.3s ease-in-out;
                                                 }
-                                                &:hover{
+
+                                                &:hover {
                                                     background-color: $theme-color;
                                                     color: $white;
                                                     border-color: $theme-color;
-                                                    span{
+
+                                                    span {
                                                         transform: translateX(12px);
                                                     }
                                                 }
-                        
+
                                             }
                                         }
                                     }
-                                    .active{
+
+                                    .active {
                                         background-color: #f5f6f8;
+
                                         .category-date-wrapper {
                                             display: flex;
                                             flex-direction: row;
@@ -480,20 +553,22 @@
                                                     flex-direction: row;
                                                     align-items: center;
                                                     gap: 10px;
-                                                    svg{
+
+                                                    svg {
                                                         width: 16px;
                                                         height: 16px;
                                                         color: $white;
-                                                        
+
                                                     }
                                                 }
                                             }
 
                                             .date-wrapper {
-                                                padding: 11px 10px; 
+                                                padding: 11px 10px;
                                                 border-radius: 6px;
                                                 border: 1px solid #ddd;
                                                 background-color: $white;
+
                                                 h5 {
                                                     margin-bottom: 0;
                                                     color: rgba(0, 0, 0, 0.60);
@@ -503,6 +578,7 @@
                                                 }
                                             }
                                         }
+
                                         .link-wrapper {
                                             a {
                                                 display: flex;
@@ -521,24 +597,26 @@
                                                 border: 1px solid $theme-color;
                                                 padding: 14px 25px;
                                                 background-color: $theme-color;
-                        
+
                                                 @media(max-width: 991px) {
                                                     padding: 10px 30px;
                                                     max-width: 100%;
                                                 }
-                        
+
                                                 span {
                                                     transition: 0.3s ease-in-out;
                                                 }
-                                                &:hover{
+
+                                                &:hover {
                                                     background-color: transparent;
                                                     color: $theme-color;
                                                     border-color: $theme-color;
-                                                    span{
+
+                                                    span {
                                                         transform: translateX(12px);
                                                     }
                                                 }
-                        
+
                                             }
                                         }
                                     }
@@ -559,10 +637,12 @@
                                 display: flex;
                                 justify-content: flex-end;
                                 align-items: center;
-                                @media(max-width: 991px){
+
+                                @media(max-width: 991px) {
                                     margin-top: 30px;
                                     justify-content: center;
                                 }
+
                                 ul {
                                     margin-bottom: 0;
                                     justify-content: center;
@@ -609,6 +689,7 @@
 
                                                 @media(max-width: 991px) {
                                                     display: block;
+                                                    font-size: 22px;
                                                 }
                                             }
                                         }

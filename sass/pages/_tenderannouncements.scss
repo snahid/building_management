@@ -1,0 +1,24 @@
+.right-box-button-filter-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    .button-wrapper{
+        a{
+            color: $white;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 14px;
+            border-radius: 6px;
+            background-color: #23282F;
+            padding: 11.5px 38px;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+            border: 1px solid #23282F;
+            &:hover{
+                color: #23282F;
+                background-color: transparent;
+            }
+        }
+    }
+}
