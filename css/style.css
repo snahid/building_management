@@ -10067,6 +10067,13 @@ header .scrolled {
 
 .post-wrapper {
   padding-top: 196px;
+  padding-bottom: 200px;
+}
+@media (max-width: 991px) {
+  .post-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 .post-wrapper .top-back-link {
   margin-bottom: 34px;
@@ -10081,6 +10088,16 @@ header .scrolled {
   font-size: 18px;
   font-weight: 400;
   line-height: 16px;
+  transition: 0.3s ease-in-out;
+}
+.post-wrapper .top-back-link a span {
+  transition: 0.3s ease-in-out;
+}
+.post-wrapper .top-back-link a:hover {
+  color: #4182FF;
+}
+.post-wrapper .top-back-link a:hover span {
+  transform: translateX(-5px);
 }
 .post-wrapper .post-inner form {
   display: flex;
@@ -10088,16 +10105,175 @@ header .scrolled {
   justify-content: space-between;
   gap: 21px;
 }
+@media (max-width: 991px) {
+  .post-wrapper .post-inner form {
+    flex-direction: column;
+  }
+}
 .post-wrapper .post-inner form .left-editor-box {
   width: 100%;
+  max-width: 846px;
+}
+@media (max-width: 991px) {
+  .post-wrapper .post-inner form .left-editor-box {
+    max-width: 100%;
+  }
 }
 .post-wrapper .post-inner form .left-editor-box .form-group textarea {
   width: 100%;
 }
-.post-wrapper .post-inner form .left-editor-box .form-group .note-editor.note-airframe, .post-wrapper .post-inner form .left-editor-box .form-group .note-editor.note-frame {
+.post-wrapper .post-inner form .left-editor-box .form-group .note-editor.note-airframe,
+.post-wrapper .post-inner form .left-editor-box .form-group .note-editor.note-frame {
   border: 1px solid #ddd;
   border-radius: 12px;
   overflow: hidden;
+}
+.post-wrapper .post-inner form .left-editor-box .form-group .note-resizebar {
+  display: none;
+}
+.post-wrapper .post-inner form .left-editor-box .form-group .note-statusbar {
+  border: none;
+}
+.post-wrapper .post-inner form .left-editor-box .form-group .note-editing-area {
+  min-height: 600px;
+}
+@media (max-width: 991px) {
+  .post-wrapper .post-inner form .left-editor-box .form-group .note-editing-area {
+    min-height: 200px;
+  }
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background-color: #f5f6f8;
+  padding: 20px;
+  width: 413px;
+}
+@media (max-width: 991px) {
+  .post-wrapper .post-inner form .right-details-post-box .inner-wrapper {
+    width: 100%;
+  }
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .title-wrapper {
+  margin-bottom: 38px;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .title-wrapper h3 {
+  margin-bottom: 0;
+  font-size: 28px;
+  color: black;
+  font-weight: 500;
+  line-height: 38px;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group {
+  margin-bottom: 15px;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group:last-child {
+  margin-bottom: 0;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .form-floating input {
+  color: black;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .form-floating input:focus {
+  border-color: #4182FF;
+  background-color: #f5f6f8;
+  box-shadow: none;
+  outline: none;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .form-floating select {
+  color: black;
+  font-weight: 400;
+  line-height: 24px;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .form-floating select:focus {
+  border-color: #4182FF;
+  background-color: #f5f6f8;
+  box-shadow: none;
+  outline: none;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .form-floating label {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  font-style: normal;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .form-check {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .form-check input {
+  width: 20px;
+  height: 20px;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .form-check input:focus {
+  box-shadow: none;
+  outline: none;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .form-check label {
+  user-select: none;
+  font-size: 14px;
+  color: rgba(15, 25, 46, 0.8);
+  font-weight: 400;
+  line-height: 22px;
+  margin-left: 11px;
+}
+@media (max-width: 1440px) {
+  .post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .form-check label br {
+    display: none;
+  }
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .btn_submit {
+  width: 100%;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: 500;
+  line-height: 26px;
+  color: white;
+  background: #4182FF;
+  border: 1px solid #4182FF;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 991px) {
+  .post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .btn_submit {
+    padding: 10px 30px;
+  }
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .btn_submit span {
+  transition: 0.3s ease-in-out;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .btn_submit:hover {
+  background-color: transparent;
+  color: #4182FF;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .form-group .btn_submit:hover span {
+  transform: translateX(12px);
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .submit-wrapper {
+  margin-top: 30px;
+}
+.post-wrapper .post-inner form .right-details-post-box .inner-wrapper .submit-wrapper .submit_btn {
+  width: 100%;
+  border: 1px solid #4182ff;
+  border-radius: 8px;
+  padding: 13px 30px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #4182ff;
 }
 
 /*# sourceMappingURL=style.css.map */
