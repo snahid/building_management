@@ -4578,6 +4578,75 @@ header .scrolled {
     display: block;
   }
 }
+.forgot-password-wrapper {
+  text-align: center;
+}
+.forgot-password-wrapper button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  border-radius: 0px;
+}
+.forgot-password-wrapper button:hover {
+  background-color: transparent;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: underline;
+}
+.forgot-password-wrapper button:focus {
+  text-decoration: underline;
+}
+
+.forgot-password-popup .modal-content .modal-header {
+  border-bottom: 0px;
+}
+.forgot-password-popup .modal-content .modal-header .btn-close {
+  opacity: 1;
+}
+.forgot-password-popup .modal-content .modal-body form .form-group {
+  margin-bottom: 15px;
+}
+.forgot-password-popup .modal-content .modal-body form .form-group .form-floating input {
+  color: black;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+.forgot-password-popup .modal-content .modal-body form .form-group .form-floating input:focus {
+  border-color: #4182FF;
+  background-color: #f5f6f8;
+  box-shadow: none;
+  outline: none;
+}
+.forgot-password-popup .modal-content .modal-body form .form-group .form-floating label {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  font-style: normal;
+}
+.forgot-password-popup .modal-content .modal-body form .btn_submit {
+  width: 100%;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: 500;
+  line-height: 26px;
+  color: white;
+  background: #4182FF;
+  border: 1px solid #4182FF;
+  transition: 0.3s ease-in-out;
+}
+.forgot-password-popup .modal-content .modal-body form .btn_submit:hover {
+  background-color: transparent;
+  color: #4182FF;
+}
+
 .dispute-resolution-top-section-wrapper {
   position: relative;
   z-index: 1;
